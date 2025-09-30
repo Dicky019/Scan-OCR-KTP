@@ -7,282 +7,370 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		835E1D1454803E6764EBE5B7 /* Pods_Scan_OCR_KTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59574BC1A17A6A641F15F9E /* Pods_Scan_OCR_KTP.framework */; };
-		D6C62E6EAA4AF499363DCE07 /* Pods_Scan_OCR_KTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522737117ECFA5510BF25CB2 /* Pods_Scan_OCR_KTPTests.framework */; };
-		FEB204ED9FF6874FA8517D52 /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54AE5E8450DC45CD031A0F28 /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework */; };
+		01C25E81C26891DB20B372DA /* PhotoPickerNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A150C3AEE66E5EFAFF293 /* PhotoPickerNavigationView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		01D8EEF4A65403F0A2CF62DA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DF13D8BBDD7CC8606BE76E /* App.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		0DE5E61C203F6A8019403732 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613897788B54B79A85D9C9F4 /* UITests.swift */; };
+		0E7552F9E4C74805429D7951 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D111C9DBF7239EA7738DF10 /* HomeView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		1F9AAD0D123FE590C484E1B3 /* GalleryFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144C0D0CC274C5E94BD432E /* GalleryFlowUITests.swift */; };
+		1FDD436D54C75BEB639DF44D /* CameraNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5B8E7969459CA8D121C3C /* CameraNavigationView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		20B971DBAB8AD8AAD92D048D /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D23181427FBFFD804846C2 /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework */; };
+		270CEFC69B100F13CF8781C7 /* Pods_Scan_OCR_KTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62F7B61ABF59BBEEB4912F8 /* Pods_Scan_OCR_KTP.framework */; };
+		351BE98F84E7E337874AEF9B /* CameraFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF443EAB769B44CEE2228991 /* CameraFlowUITests.swift */; };
+		4BE7DD1B62B2616D8A253D5F /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FDF7BB461822FCEC9E58B7 /* Tests.swift */; };
+		6785FAAE76198E14EBA108CA /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C74A646AED265C787A9264 /* AppRoute.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		8F49C270750994AA8371F662 /* MLKitOCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8DE34498786D5A04644F4 /* MLKitOCRService.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		9D6109690C40FFC4DD6EFB18 /* OCRResultNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A886C16C9F5EF186E4B631 /* OCRResultNavigationView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		9F22AA37FF979EDEECA8872B /* VisionOCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D05ADA299B26473CABB3B9 /* VisionOCRService.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		9FEFEF66E51449C16581E733 /* KTPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91FB483A6AFF88A324BFEA /* KTPParser.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		A320362AEF501B4DD48C78F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF4205AB493583390ECD70 /* ContentView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		AA6D0F9811D619C64AD619F2 /* OCRLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8942E5D1A5AB8BDD5E261311 /* OCRLogger.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		AE3D39EDE13B05C85963601E /* ImagePreviewNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D36B8A40C558CA5DBBD9C5 /* ImagePreviewNavigationView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		B60AEEC9E4CBF88F6E3D33F0 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F263658FBF2F8624D12302 /* NavigationCoordinator.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		C17B9BFA9DFDA6A05EBCA483 /* OCRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085F4D494A706E48D118D54 /* OCRManager.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		D3D1D5C54756684022624599 /* UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007E1CB8F85C9B328CA5D68 /* UITestsLaunchTests.swift */; };
+		D944E18E436157402DF70A62 /* KTPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83092445B6E2C7175E7A48 /* KTPData.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		DEBC7B3E839F73EB2674FD5E /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99905DA961E5944DE92623B /* ImageData.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		E7502E52110DFC43EAC8641C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F83C7F05B55D6D03D0C5894 /* Assets.xcassets */; };
+		FE24C7B4A56BA6CCD674AA4E /* Pods_Scan_OCR_KTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7D3632223EE4B553E59032 /* Pods_Scan_OCR_KTPTests.framework */; };
+		FF52C8D6C718F88304CD2CE6 /* NavigationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD54D259DECA25B15C7EF0 /* NavigationFactory.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		849C77892E8A24CF00CE1F48 /* PBXContainerItemProxy */ = {
+		A728CD4B9717901512790288 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 849C77722E8A24CD00CE1F48 /* Project object */;
+			containerPortal = C63ED905F517428F9708B3DA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 849C77792E8A24CD00CE1F48;
+			remoteGlobalIDString = 9830B63B99ABF6D53E6F43F9;
 			remoteInfo = "Scan OCR KTP";
 		};
-		849C77932E8A24CF00CE1F48 /* PBXContainerItemProxy */ = {
+		DDA37FD92A5AF9CB0F67E086 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 849C77722E8A24CD00CE1F48 /* Project object */;
+			containerPortal = C63ED905F517428F9708B3DA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 849C77792E8A24CD00CE1F48;
+			remoteGlobalIDString = 9830B63B99ABF6D53E6F43F9;
 			remoteInfo = "Scan OCR KTP";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0826FCAEEB31536ACCB90E7A /* Pods-Scan OCR KTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.debug.xcconfig"; sourceTree = "<group>"; };
-		40094AD66AC378713DFCF2EA /* Pods-Scan OCR KTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.release.xcconfig"; sourceTree = "<group>"; };
-		491C2FA6E20CFEE58BBB97CF /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; sourceTree = "<group>"; };
-		522737117ECFA5510BF25CB2 /* Pods_Scan_OCR_KTPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scan_OCR_KTPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54AE5E8450DC45CD031A0F28 /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		849C777A2E8A24CD00CE1F48 /* Scan OCR KTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scan OCR KTP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		849C77882E8A24CF00CE1F48 /* Scan OCR KTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scan OCR KTPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		849C77922E8A24CF00CE1F48 /* Scan OCR KTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scan OCR KTPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C59574BC1A17A6A641F15F9E /* Pods_Scan_OCR_KTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scan_OCR_KTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8B4663696C47CC999CA3CE1 /* Pods-Scan OCR KTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.release.xcconfig"; sourceTree = "<group>"; };
-		CB7B142D4DA383EFB4826DD5 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D16490B73034B09F77E0BB25 /* Pods-Scan OCR KTPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		01CD54D259DECA25B15C7EF0 /* NavigationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationFactory.swift; sourceTree = "<group>"; };
+		0F83C7F05B55D6D03D0C5894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1578018C170AF4055F87729A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3144C0D0CC274C5E94BD432E /* GalleryFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryFlowUITests.swift; sourceTree = "<group>"; };
+		3C7D3632223EE4B553E59032 /* Pods_Scan_OCR_KTPTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_Scan_OCR_KTPTests.framework; sourceTree = "<group>"; };
+		3D84AC56750606486AE2F13B /* Scan OCR KTPTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "Scan OCR KTPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4007E1CB8F85C9B328CA5D68 /* UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4085F4D494A706E48D118D54 /* OCRManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRManager.swift; sourceTree = "<group>"; };
+		4ED5F3D2DA5E19DF13616EBC /* Scan OCR KTP.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Scan OCR KTP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		613897788B54B79A85D9C9F4 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		62D05ADA299B26473CABB3B9 /* VisionOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOCRService.swift; sourceTree = "<group>"; };
+		66121D74E460379B7CD821B9 /* Pods-Scan OCR KTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.release.xcconfig"; sourceTree = "<group>"; };
+		70C74A646AED265C787A9264 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		7F011446DA8BE7941BD7217F /* Pods-Scan OCR KTPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		85F263658FBF2F8624D12302 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		8942E5D1A5AB8BDD5E261311 /* OCRLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRLogger.swift; sourceTree = "<group>"; };
+		8B6A150C3AEE66E5EFAFF293 /* PhotoPickerNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerNavigationView.swift; sourceTree = "<group>"; };
+		9D111C9DBF7239EA7738DF10 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A1ED3720D33940E09527CB13 /* Pods-Scan OCR KTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.release.xcconfig"; sourceTree = "<group>"; };
+		A6BF4205AB493583390ECD70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8A886C16C9F5EF186E4B631 /* OCRResultNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRResultNavigationView.swift; sourceTree = "<group>"; };
+		ABF40EC6C3738C258A2168F7 /* Pods-Scan OCR KTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.debug.xcconfig"; sourceTree = "<group>"; };
+		B1FDF7BB461822FCEC9E58B7 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		B99905DA961E5944DE92623B /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		BF443EAB769B44CEE2228991 /* CameraFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFlowUITests.swift; sourceTree = "<group>"; };
+		C1DF13D8BBDD7CC8606BE76E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		CE91FB483A6AFF88A324BFEA /* KTPParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTPParser.swift; sourceTree = "<group>"; };
+		D8D36B8A40C558CA5DBBD9C5 /* ImagePreviewNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewNavigationView.swift; sourceTree = "<group>"; };
+		E092D5835D6E93C9AFED296A /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		E0D23181427FBFFD804846C2 /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework; sourceTree = "<group>"; };
+		E0E60B0043797F9838134E9A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9D8DE34498786D5A04644F4 /* MLKitOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitOCRService.swift; sourceTree = "<group>"; };
+		ECB5B8E7969459CA8D121C3C /* CameraNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraNavigationView.swift; sourceTree = "<group>"; };
+		EF83092445B6E2C7175E7A48 /* KTPData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTPData.swift; sourceTree = "<group>"; };
+		F62F7B61ABF59BBEEB4912F8 /* Pods_Scan_OCR_KTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_Scan_OCR_KTP.framework; sourceTree = "<group>"; };
+		FEEEEE508F8D2BA4D025F023 /* Scan OCR KTPUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "Scan OCR KTPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		849C777C2E8A24CD00CE1F48 /* App */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		849C778B2E8A24CF00CE1F48 /* Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		849C77952E8A24CF00CE1F48 /* UITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
-			path = UITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		849C77772E8A24CD00CE1F48 /* Frameworks */ = {
+		0E42511AD8A39B371D5F39A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				835E1D1454803E6764EBE5B7 /* Pods_Scan_OCR_KTP.framework in Frameworks */,
+				20B971DBAB8AD8AAD92D048D /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		849C77852E8A24CF00CE1F48 /* Frameworks */ = {
+		5675F281EBB57AC59893215B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6C62E6EAA4AF499363DCE07 /* Pods_Scan_OCR_KTPTests.framework in Frameworks */,
+				FE24C7B4A56BA6CCD674AA4E /* Pods_Scan_OCR_KTPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		849C778F2E8A24CF00CE1F48 /* Frameworks */ = {
+		6BF31982E971A5BA1619BAE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB204ED9FF6874FA8517D52 /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework in Frameworks */,
+				270CEFC69B100F13CF8781C7 /* Pods_Scan_OCR_KTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		849C77712E8A24CD00CE1F48 = {
+		1F80B9B0086CDCA0100034C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				849C777C2E8A24CD00CE1F48 /* App */,
-				849C778B2E8A24CF00CE1F48 /* Tests */,
-				849C77952E8A24CF00CE1F48 /* UITests */,
-				849C777B2E8A24CD00CE1F48 /* Products */,
-				B3FD287308718A2A230616A1 /* Pods */,
-				F57C4D1C4169CF4608118E9B /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		849C777B2E8A24CD00CE1F48 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				849C777A2E8A24CD00CE1F48 /* Scan OCR KTP.app */,
-				849C77882E8A24CF00CE1F48 /* Scan OCR KTPTests.xctest */,
-				849C77922E8A24CF00CE1F48 /* Scan OCR KTPUITests.xctest */,
+				4ED5F3D2DA5E19DF13616EBC /* Scan OCR KTP.app */,
+				3D84AC56750606486AE2F13B /* Scan OCR KTPTests.xctest */,
+				FEEEEE508F8D2BA4D025F023 /* Scan OCR KTPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B3FD287308718A2A230616A1 /* Pods */ = {
+		2D17EEC7948298A3D589428C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				0826FCAEEB31536ACCB90E7A /* Pods-Scan OCR KTP.debug.xcconfig */,
-				C8B4663696C47CC999CA3CE1 /* Pods-Scan OCR KTP.release.xcconfig */,
-				CB7B142D4DA383EFB4826DD5 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */,
-				491C2FA6E20CFEE58BBB97CF /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */,
-				D16490B73034B09F77E0BB25 /* Pods-Scan OCR KTPTests.debug.xcconfig */,
-				40094AD66AC378713DFCF2EA /* Pods-Scan OCR KTPTests.release.xcconfig */,
+				82D07E477A299B0BA60CD65A /* Models */,
+				7D5256B07445B290D3FF7AB0 /* Navigation */,
+				9C68E689823F41F8E3D2AF59 /* Services */,
+				EDFF5680B1C00F8CA1E8D2FC /* Utils */,
+				CC6ED3D20DBAEC4D9BAFE854 /* Views */,
+				E092D5835D6E93C9AFED296A /* App.entitlements */,
+				C1DF13D8BBDD7CC8606BE76E /* App.swift */,
+				0F83C7F05B55D6D03D0C5894 /* Assets.xcassets */,
+				A6BF4205AB493583390ECD70 /* ContentView.swift */,
 			);
+			name = App;
+			path = App;
+			sourceTree = "<group>";
+		};
+		469DD3222D63E9BB994EA9F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABF40EC6C3738C258A2168F7 /* Pods-Scan OCR KTP.debug.xcconfig */,
+				A1ED3720D33940E09527CB13 /* Pods-Scan OCR KTP.release.xcconfig */,
+				E0E60B0043797F9838134E9A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */,
+				1578018C170AF4055F87729A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */,
+				7F011446DA8BE7941BD7217F /* Pods-Scan OCR KTPTests.debug.xcconfig */,
+				66121D74E460379B7CD821B9 /* Pods-Scan OCR KTPTests.release.xcconfig */,
+			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F57C4D1C4169CF4608118E9B /* Frameworks */ = {
+		63BFAABBDE45BC6321276B15 = {
 			isa = PBXGroup;
 			children = (
-				C59574BC1A17A6A641F15F9E /* Pods_Scan_OCR_KTP.framework */,
-				54AE5E8450DC45CD031A0F28 /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework */,
-				522737117ECFA5510BF25CB2 /* Pods_Scan_OCR_KTPTests.framework */,
+				2D17EEC7948298A3D589428C /* App */,
+				7BD8EEADB89091BAE6643A46 /* Tests */,
+				81D78E29FD07E71F2CC457F6 /* UITests */,
+				6D43D7E38AFCA458F5AC5901 /* Frameworks */,
+				1F80B9B0086CDCA0100034C9 /* Products */,
+				469DD3222D63E9BB994EA9F5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6D43D7E38AFCA458F5AC5901 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0D23181427FBFFD804846C2 /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework */,
+				F62F7B61ABF59BBEEB4912F8 /* Pods_Scan_OCR_KTP.framework */,
+				3C7D3632223EE4B553E59032 /* Pods_Scan_OCR_KTPTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BD8EEADB89091BAE6643A46 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B1FDF7BB461822FCEC9E58B7 /* Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		7D5256B07445B290D3FF7AB0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				70C74A646AED265C787A9264 /* AppRoute.swift */,
+				85F263658FBF2F8624D12302 /* NavigationCoordinator.swift */,
+				01CD54D259DECA25B15C7EF0 /* NavigationFactory.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		81D78E29FD07E71F2CC457F6 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF443EAB769B44CEE2228991 /* CameraFlowUITests.swift */,
+				3144C0D0CC274C5E94BD432E /* GalleryFlowUITests.swift */,
+				613897788B54B79A85D9C9F4 /* UITests.swift */,
+				4007E1CB8F85C9B328CA5D68 /* UITestsLaunchTests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		82D07E477A299B0BA60CD65A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B99905DA961E5944DE92623B /* ImageData.swift */,
+				EF83092445B6E2C7175E7A48 /* KTPData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C68E689823F41F8E3D2AF59 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE91FB483A6AFF88A324BFEA /* KTPParser.swift */,
+				E9D8DE34498786D5A04644F4 /* MLKitOCRService.swift */,
+				4085F4D494A706E48D118D54 /* OCRManager.swift */,
+				62D05ADA299B26473CABB3B9 /* VisionOCRService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CC6ED3D20DBAEC4D9BAFE854 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECB5B8E7969459CA8D121C3C /* CameraNavigationView.swift */,
+				9D111C9DBF7239EA7738DF10 /* HomeView.swift */,
+				D8D36B8A40C558CA5DBBD9C5 /* ImagePreviewNavigationView.swift */,
+				A8A886C16C9F5EF186E4B631 /* OCRResultNavigationView.swift */,
+				8B6A150C3AEE66E5EFAFF293 /* PhotoPickerNavigationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDFF5680B1C00F8CA1E8D2FC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8942E5D1A5AB8BDD5E261311 /* OCRLogger.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		849C77792E8A24CD00CE1F48 /* Scan OCR KTP */ = {
+		381F30E2A988D0A89518F3FE /* Scan OCR KTPUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 849C779C2E8A24CF00CE1F48 /* Build configuration list for PBXNativeTarget "Scan OCR KTP" */;
+			buildConfigurationList = 2C64A7F5F621EFAE7597F52A /* Build configuration list for PBXNativeTarget "Scan OCR KTPUITests" */;
 			buildPhases = (
-				A262F61062C74E52DD47C978 /* [CP] Check Pods Manifest.lock */,
-				849C77762E8A24CD00CE1F48 /* Sources */,
-				849C77772E8A24CD00CE1F48 /* Frameworks */,
-				849C77782E8A24CD00CE1F48 /* Resources */,
-				E827C3E1E913CFD9B784B81F /* [CP] Embed Pods Frameworks */,
-				CB8C37EE0F818BAA073083FE /* [CP] Copy Pods Resources */,
+				DDBE3B78A3B55A19A59F9E39 /* [CP] Check Pods Manifest.lock */,
+				DEBAF3C98FAFF35CD3C6F6FE /* Sources */,
+				0E42511AD8A39B371D5F39A5 /* Frameworks */,
+				0AEAE18AFEA5E82EBC128D29 /* [CP] Embed Pods Frameworks */,
+				B9C0FA80666AC677B3467BD4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				849C777C2E8A24CD00CE1F48 /* App */,
-			);
-			name = "Scan OCR KTP";
-			productName = "Scan OCR KTP";
-			productReference = 849C777A2E8A24CD00CE1F48 /* Scan OCR KTP.app */;
-			productType = "com.apple.product-type.application";
-		};
-		849C77872E8A24CF00CE1F48 /* Scan OCR KTPTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 849C779F2E8A24CF00CE1F48 /* Build configuration list for PBXNativeTarget "Scan OCR KTPTests" */;
-			buildPhases = (
-				B620CEDEC1A2DBC4D5ABD3B1 /* [CP] Check Pods Manifest.lock */,
-				849C77842E8A24CF00CE1F48 /* Sources */,
-				849C77852E8A24CF00CE1F48 /* Frameworks */,
-				849C77862E8A24CF00CE1F48 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				849C778A2E8A24CF00CE1F48 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				849C778B2E8A24CF00CE1F48 /* Tests */,
-			);
-			name = "Scan OCR KTPTests";
-			productName = "Scan OCR KTPTests";
-			productReference = 849C77882E8A24CF00CE1F48 /* Scan OCR KTPTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		849C77912E8A24CF00CE1F48 /* Scan OCR KTPUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 849C77A22E8A24CF00CE1F48 /* Build configuration list for PBXNativeTarget "Scan OCR KTPUITests" */;
-			buildPhases = (
-				A02C901016F7482EE5B094AE /* [CP] Check Pods Manifest.lock */,
-				849C778E2E8A24CF00CE1F48 /* Sources */,
-				849C778F2E8A24CF00CE1F48 /* Frameworks */,
-				849C77902E8A24CF00CE1F48 /* Resources */,
-				13FC6E18A316AB9EF23B1B03 /* [CP] Embed Pods Frameworks */,
-				7D627DA27BD6C98DA5BCC54D /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				849C77942E8A24CF00CE1F48 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				849C77952E8A24CF00CE1F48 /* UITests */,
+				F3161C1E412A1850195ED88A /* PBXTargetDependency */,
 			);
 			name = "Scan OCR KTPUITests";
 			productName = "Scan OCR KTPUITests";
-			productReference = 849C77922E8A24CF00CE1F48 /* Scan OCR KTPUITests.xctest */;
+			productReference = FEEEEE508F8D2BA4D025F023 /* Scan OCR KTPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9830B63B99ABF6D53E6F43F9 /* Scan OCR KTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78552264D41D8049A87BC251 /* Build configuration list for PBXNativeTarget "Scan OCR KTP" */;
+			buildPhases = (
+				FE1E9AA53FA46E1783BC18CA /* [CP] Check Pods Manifest.lock */,
+				EFA06C73A2243776F3A276FB /* [CP] Embed Pods Frameworks */,
+				2017192637AE857A192F95FB /* [CP] Copy Pods Resources */,
+				A5F07B1AEEE9C1EBD3C8B9BC /* Sources */,
+				69844104E44CCFDF5671C2FC /* Resources */,
+				6BF31982E971A5BA1619BAE9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scan OCR KTP";
+			productName = "Scan OCR KTP";
+			productReference = 4ED5F3D2DA5E19DF13616EBC /* Scan OCR KTP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1C998CBDB118CEFE1895BA8 /* Scan OCR KTPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B2C197197AB5749E47A60CB /* Build configuration list for PBXNativeTarget "Scan OCR KTPTests" */;
+			buildPhases = (
+				39AB81B7D2733F847FD0C127 /* [CP] Check Pods Manifest.lock */,
+				87E6BB09E342432A0A0A4634 /* Sources */,
+				5675F281EBB57AC59893215B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3301482A5867810C77CE4D3 /* PBXTargetDependency */,
+			);
+			name = "Scan OCR KTPTests";
+			productName = "Scan OCR KTPTests";
+			productReference = 3D84AC56750606486AE2F13B /* Scan OCR KTPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		849C77722E8A24CD00CE1F48 /* Project object */ = {
+		C63ED905F517428F9708B3DA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1640;
-				LastUpgradeCheck = 1640;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					849C77792E8A24CD00CE1F48 = {
-						CreatedOnToolsVersion = 16.4;
+					381F30E2A988D0A89518F3FE = {
+						DevelopmentTeam = 6LKBYRNM9Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9830B63B99ABF6D53E6F43F9;
 					};
-					849C77872E8A24CF00CE1F48 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 849C77792E8A24CD00CE1F48;
+					9830B63B99ABF6D53E6F43F9 = {
+						DevelopmentTeam = 6LKBYRNM9Y;
+						ProvisioningStyle = Automatic;
 					};
-					849C77912E8A24CF00CE1F48 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 849C77792E8A24CD00CE1F48;
+					D1C998CBDB118CEFE1895BA8 = {
+						DevelopmentTeam = 6LKBYRNM9Y;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 849C77752E8A24CD00CE1F48 /* Build configuration list for PBXProject "Scan OCR KTP" */;
+			buildConfigurationList = 8EE3E27380EC5FB95075BFA5 /* Build configuration list for PBXProject "Scan OCR KTP" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = 849C77712E8A24CD00CE1F48;
+			mainGroup = 63BFAABBDE45BC6321276B15;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 849C777B2E8A24CD00CE1F48 /* Products */;
+			productRefGroup = 1F80B9B0086CDCA0100034C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				849C77792E8A24CD00CE1F48 /* Scan OCR KTP */,
-				849C77872E8A24CF00CE1F48 /* Scan OCR KTPTests */,
-				849C77912E8A24CF00CE1F48 /* Scan OCR KTPUITests */,
+				9830B63B99ABF6D53E6F43F9 /* Scan OCR KTP */,
+				D1C998CBDB118CEFE1895BA8 /* Scan OCR KTPTests */,
+				381F30E2A988D0A89518F3FE /* Scan OCR KTPUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		849C77782E8A24CD00CE1F48 /* Resources */ = {
+		69844104E44CCFDF5671C2FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		849C77862E8A24CF00CE1F48 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		849C77902E8A24CF00CE1F48 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E7502E52110DFC43EAC8641C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13FC6E18A316AB9EF23B1B03 /* [CP] Embed Pods Frameworks */ = {
+		0AEAE18AFEA5E82EBC128D29 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,69 +387,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7D627DA27BD6C98DA5BCC54D /* [CP] Copy Pods Resources */ = {
+		2017192637AE857A192F95FB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-resources.sh\"\n";
 		};
-		A02C901016F7482EE5B094AE /* [CP] Check Pods Manifest.lock */ = {
+		39AB81B7D2733F847FD0C127 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Scan OCR KTP-Scan OCR KTPUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A262F61062C74E52DD47C978 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Scan OCR KTP-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B620CEDEC1A2DBC4D5ABD3B1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -380,27 +425,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
-		CB8C37EE0F818BAA073083FE /* [CP] Copy Pods Resources */ = {
+		B9C0FA80666AC677B3467BD4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E827C3E1E913CFD9B784B81F /* [CP] Embed Pods Frameworks */ = {
+		DDBE3B78A3B55A19A59F9E39 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scan OCR KTP-Scan OCR KTPUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+		EFA06C73A2243776F3A276FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -414,56 +481,121 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+		};
+		FE1E9AA53FA46E1783BC18CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scan OCR KTP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		849C77762E8A24CD00CE1F48 /* Sources */ = {
+		87E6BB09E342432A0A0A4634 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE7DD1B62B2616D8A253D5F /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		849C77842E8A24CF00CE1F48 /* Sources */ = {
+		A5F07B1AEEE9C1EBD3C8B9BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D8EEF4A65403F0A2CF62DA /* App.swift in Sources */,
+				6785FAAE76198E14EBA108CA /* AppRoute.swift in Sources */,
+				1FDD436D54C75BEB639DF44D /* CameraNavigationView.swift in Sources */,
+				A320362AEF501B4DD48C78F2 /* ContentView.swift in Sources */,
+				0E7552F9E4C74805429D7951 /* HomeView.swift in Sources */,
+				DEBC7B3E839F73EB2674FD5E /* ImageData.swift in Sources */,
+				AE3D39EDE13B05C85963601E /* ImagePreviewNavigationView.swift in Sources */,
+				D944E18E436157402DF70A62 /* KTPData.swift in Sources */,
+				9FEFEF66E51449C16581E733 /* KTPParser.swift in Sources */,
+				8F49C270750994AA8371F662 /* MLKitOCRService.swift in Sources */,
+				B60AEEC9E4CBF88F6E3D33F0 /* NavigationCoordinator.swift in Sources */,
+				FF52C8D6C718F88304CD2CE6 /* NavigationFactory.swift in Sources */,
+				AA6D0F9811D619C64AD619F2 /* OCRLogger.swift in Sources */,
+				C17B9BFA9DFDA6A05EBCA483 /* OCRManager.swift in Sources */,
+				9D6109690C40FFC4DD6EFB18 /* OCRResultNavigationView.swift in Sources */,
+				01C25E81C26891DB20B372DA /* PhotoPickerNavigationView.swift in Sources */,
+				9F22AA37FF979EDEECA8872B /* VisionOCRService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		849C778E2E8A24CF00CE1F48 /* Sources */ = {
+		DEBAF3C98FAFF35CD3C6F6FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351BE98F84E7E337874AEF9B /* CameraFlowUITests.swift in Sources */,
+				1F9AAD0D123FE590C484E1B3 /* GalleryFlowUITests.swift in Sources */,
+				0DE5E61C203F6A8019403732 /* UITests.swift in Sources */,
+				D3D1D5C54756684022624599 /* UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		849C778A2E8A24CF00CE1F48 /* PBXTargetDependency */ = {
+		E3301482A5867810C77CE4D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 849C77792E8A24CD00CE1F48 /* Scan OCR KTP */;
-			targetProxy = 849C77892E8A24CF00CE1F48 /* PBXContainerItemProxy */;
+			target = 9830B63B99ABF6D53E6F43F9 /* Scan OCR KTP */;
+			targetProxy = DDA37FD92A5AF9CB0F67E086 /* PBXContainerItemProxy */;
 		};
-		849C77942E8A24CF00CE1F48 /* PBXTargetDependency */ = {
+		F3161C1E412A1850195ED88A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 849C77792E8A24CD00CE1F48 /* Scan OCR KTP */;
-			targetProxy = 849C77932E8A24CF00CE1F48 /* PBXContainerItemProxy */;
+			target = 9830B63B99ABF6D53E6F43F9 /* Scan OCR KTP */;
+			targetProxy = A728CD4B9717901512790288 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		849C779A2E8A24CF00CE1F48 /* Debug */ = {
+		0790FD7A7BAF1053F7BB454D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F011446DA8BE7941BD7217F /* Pods-Scan OCR KTPTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diki.scan.ocr.ktp.Tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scan OCR KTP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scan OCR KTP";
+			};
+			name = Debug;
+		};
+		37CD1A14C112D8E259BB00F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -489,19 +621,163 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6LKBYRNM9Y;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan KTP documents";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to select KTP images for scanning";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48A84F605A771A239D997397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1578018C170AF4055F87729A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diki.scan.ocr.ktp.UITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Scan OCR KTP";
+			};
+			name = Release;
+		};
+		4E2B61116111E18645AA6A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66121D74E460379B7CD821B9 /* Pods-Scan OCR KTPTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diki.scan.ocr.ktp.Tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scan OCR KTP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scan OCR KTP";
+			};
+			name = Release;
+		};
+		4F7D14FDEB25687E2C312B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1ED3720D33940E09527CB13 /* Pods-Scan OCR KTP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diki.scan.ocr.ktp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7630ED48DED3DBE856AE003D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 6LKBYRNM9Y;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -509,291 +785,118 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan KTP documents";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to select KTP images for scanning";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		849C779B2E8A24CF00CE1F48 /* Release */ = {
+		97BD27BCF74A10F7F46B20E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E60B0043797F9838134E9A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6LKBYRNM9Y;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diki.scan.ocr.ktp.UITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Scan OCR KTP";
 			};
-			name = Release;
+			name = Debug;
 		};
-		849C779D2E8A24CF00CE1F48 /* Debug */ = {
+		9B97388DE08EC4B2D83AE773 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0826FCAEEB31536ACCB90E7A /* Pods-Scan OCR KTP.debug.xcconfig */;
+			baseConfigurationReference = ABF40EC6C3738C258A2168F7 /* Pods-Scan OCR KTP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LKBYRNM9Y;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
-				"EXCLUDED_ARCHS[sdk=xrsimulator*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan KTP documents";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to select KTP images for scanning";
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.diki.scan.ocr.ktp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.5;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		849C779E2E8A24CF00CE1F48 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8B4663696C47CC999CA3CE1 /* Pods-Scan OCR KTP.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LKBYRNM9Y;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
-				"EXCLUDED_ARCHS[sdk=xrsimulator*]" = x86_64;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan KTP documents";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to select KTP images for scanning";
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diki.scan.ocr.ktp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.5;
-			};
-			name = Release;
-		};
-		849C77A02E8A24CF00CE1F48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D16490B73034B09F77E0BB25 /* Pods-Scan OCR KTPTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LKBYRNM9Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diki.scan.ocr.ktp.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scan OCR KTP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scan OCR KTP";
-				XROS_DEPLOYMENT_TARGET = 2.5;
-			};
-			name = Debug;
-		};
-		849C77A12E8A24CF00CE1F48 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40094AD66AC378713DFCF2EA /* Pods-Scan OCR KTPTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LKBYRNM9Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diki.scan.ocr.ktp.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scan OCR KTP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scan OCR KTP";
-				XROS_DEPLOYMENT_TARGET = 2.5;
-			};
-			name = Release;
-		};
-		849C77A32E8A24CF00CE1F48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB7B142D4DA383EFB4826DD5 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LKBYRNM9Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diki.scan.ocr.ktp.uitests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = "Scan OCR KTP";
-				XROS_DEPLOYMENT_TARGET = 2.5;
-			};
-			name = Debug;
-		};
-		849C77A42E8A24CF00CE1F48 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 491C2FA6E20CFEE58BBB97CF /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LKBYRNM9Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diki.scan.ocr.ktp.uitests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = "Scan OCR KTP";
-				XROS_DEPLOYMENT_TARGET = 2.5;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		849C77752E8A24CD00CE1F48 /* Build configuration list for PBXProject "Scan OCR KTP" */ = {
+		2C64A7F5F621EFAE7597F52A /* Build configuration list for PBXNativeTarget "Scan OCR KTPUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				849C779A2E8A24CF00CE1F48 /* Debug */,
-				849C779B2E8A24CF00CE1F48 /* Release */,
+				97BD27BCF74A10F7F46B20E7 /* Debug */,
+				48A84F605A771A239D997397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		849C779C2E8A24CF00CE1F48 /* Build configuration list for PBXNativeTarget "Scan OCR KTP" */ = {
+		78552264D41D8049A87BC251 /* Build configuration list for PBXNativeTarget "Scan OCR KTP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				849C779D2E8A24CF00CE1F48 /* Debug */,
-				849C779E2E8A24CF00CE1F48 /* Release */,
+				9B97388DE08EC4B2D83AE773 /* Debug */,
+				4F7D14FDEB25687E2C312B47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		849C779F2E8A24CF00CE1F48 /* Build configuration list for PBXNativeTarget "Scan OCR KTPTests" */ = {
+		7B2C197197AB5749E47A60CB /* Build configuration list for PBXNativeTarget "Scan OCR KTPTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				849C77A02E8A24CF00CE1F48 /* Debug */,
-				849C77A12E8A24CF00CE1F48 /* Release */,
+				0790FD7A7BAF1053F7BB454D /* Debug */,
+				4E2B61116111E18645AA6A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		849C77A22E8A24CF00CE1F48 /* Build configuration list for PBXNativeTarget "Scan OCR KTPUITests" */ = {
+		8EE3E27380EC5FB95075BFA5 /* Build configuration list for PBXProject "Scan OCR KTP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				849C77A32E8A24CF00CE1F48 /* Debug */,
-				849C77A42E8A24CF00CE1F48 /* Release */,
+				7630ED48DED3DBE856AE003D /* Debug */,
+				37CD1A14C112D8E259BB00F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 849C77722E8A24CD00CE1F48 /* Project object */;
+	rootObject = C63ED905F517428F9708B3DA /* Project object */;
 }

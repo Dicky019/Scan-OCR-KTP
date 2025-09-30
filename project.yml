@@ -63,7 +63,7 @@ targets:
     preBuildScripts:
       - script: |
           if [ -f "${PODS_ROOT}/../Podfile" ]; then
-            "${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-frameworks.sh"
+            "${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-frameworks.sh" || true
           fi
         name: "[CP] Embed Pods Frameworks"
         inputFiles:

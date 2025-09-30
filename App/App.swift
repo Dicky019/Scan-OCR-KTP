@@ -8,10 +8,27 @@
 import SwiftUI
 
 @main
-struct Scan_OCR_KTPApp: App {
+struct MainApp: App {
+
+  init() {
+    // Disable MLKit analytics to prevent background task warnings
+    #if !targetEnvironment(simulator)
+    disableMLKitAnalytics()
+    #endif
+  }
+
   var body: some Scene {
     WindowGroup {
       ContentView()
     }
   }
+
+  #if !targetEnvironment(simulator)
+  private func disableMLKitAnalytics() {
+    // Disable Google MLKit data collection
+    UserDefaults.standard.set(false, forKey: "firebase_data_collection_default_enabled")
+    UserDefaults.standard.set(false, forKey: "google_app_measurement_default_enabled")
+    UserDefaults.standard.synchronize()
+  }
+  #endif
 }
