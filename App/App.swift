@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct Scan_OCR_KTPApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }

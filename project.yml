@@ -1,0 +1,200 @@
+name: Scan OCR KTP
+options:
+  bundleIdPrefix: com.diki.scan.ocr
+  deploymentTarget:
+    iOS: "18.5"
+  developmentLanguage: en
+  groupSortPosition: top
+  generateEmptyDirectories: true
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_BITCODE: "NO"
+    ENABLE_PREVIEWS: "YES"
+    DEVELOPMENT_TEAM: "6LKBYRNM9Y"
+    CODE_SIGN_STYLE: Automatic
+    SUPPORTED_PLATFORMS: "iphoneos iphonesimulator"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.5"
+    INFOPLIST_KEY_NSCameraUsageDescription: "This app needs camera access to scan KTP documents"
+    INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "This app needs photo library access to select KTP images for scanning"
+    INFOPLIST_KEY_UIApplicationSceneManifest_Generation: "YES"
+    INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: "YES"
+    INFOPLIST_KEY_UILaunchScreen_Generation: "YES"
+    INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+    INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+
+# CocoaPods managed - no SPM packages needed
+
+targets:
+  Scan OCR KTP:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+        name: App
+        compilerFlags:
+          - "-DDEBUG"
+        excludes:
+          - "**/*.md"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.diki.scan.ocr.ktp
+        PRODUCT_NAME: "$(TARGET_NAME)"
+        GENERATE_INFOPLIST_FILE: "YES"
+        CODE_SIGN_ENTITLEMENTS: App/App.entitlements
+        ENABLE_HARDENED_RUNTIME: "YES"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+      configs:
+        Debug:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+          ONLY_ACTIVE_ARCH: "YES"
+          SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+        Release:
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+    dependencies:
+      - framework: Pods_Scan_OCR_KTP.framework
+        embed: false
+    preBuildScripts:
+      - script: |
+          if [ -f "${PODS_ROOT}/../Podfile" ]; then
+            "${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-frameworks.sh"
+          fi
+        name: "[CP] Embed Pods Frameworks"
+        inputFiles:
+          - "${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-frameworks.sh"
+          - "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
+          - "${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework"
+          - "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework"
+          - "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework"
+          - "${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework"
+          - "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
+        outputFiles:
+          - "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework"
+          - "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework"
+          - "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework"
+          - "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework"
+          - "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework"
+          - "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework"
+        basedOnDependencyAnalysis: false
+      - script: |
+          if [ -f "${PODS_ROOT}/../Podfile" ]; then
+            "${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-resources.sh"
+          fi
+        name: "[CP] Copy Pods Resources"
+        inputFiles:
+          - "${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-resources.sh"
+        basedOnDependencyAnalysis: false
+      - script: |
+          diff "${PODS_PODFILE_DIR_PATH}/Podfile.lock" "${PODS_ROOT}/Manifest.lock" > /dev/null
+          if [ $? != 0 ] ; then
+              # print error to STDERR
+              echo "error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation." >&2
+              exit 1
+          fi
+          # This output is used by Xcode 'outputs' to avoid re-running this script phase.
+          echo "SUCCESS" > "${SCRIPT_OUTPUT_FILE_0}"
+        name: "[CP] Check Pods Manifest.lock"
+        inputFiles:
+          - "${PODS_PODFILE_DIR_PATH}/Podfile.lock"
+          - "${PODS_ROOT}/Manifest.lock"
+        outputFiles:
+          - "$(DERIVED_FILE_DIR)/Pods-Scan OCR KTP-checkManifestLockResult.txt"
+        basedOnDependencyAnalysis: false
+
+  Scan OCR KTPTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.diki.scan.ocr.ktp.Tests
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Scan OCR KTP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scan OCR KTP"
+        GENERATE_INFOPLIST_FILE: "YES"
+    dependencies:
+      - target: Scan OCR KTP
+      - framework: Pods_Scan_OCR_KTPTests.framework
+        embed: false
+    preBuildScripts:
+      - script: |
+          diff "${PODS_PODFILE_DIR_PATH}/Podfile.lock" "${PODS_ROOT}/Manifest.lock" > /dev/null
+          if [ $? != 0 ] ; then
+              echo "error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation." >&2
+              exit 1
+          fi
+          echo "SUCCESS" > "${SCRIPT_OUTPUT_FILE_0}"
+        name: "[CP] Check Pods Manifest.lock"
+        inputFiles:
+          - "${PODS_PODFILE_DIR_PATH}/Podfile.lock"
+          - "${PODS_ROOT}/Manifest.lock"
+        outputFiles:
+          - "$(DERIVED_FILE_DIR)/Pods-Scan OCR KTPTests-checkManifestLockResult.txt"
+        basedOnDependencyAnalysis: false
+
+  Scan OCR KTPUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - UITests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.diki.scan.ocr.ktp.UITests
+        TEST_TARGET_NAME: "Scan OCR KTP"
+        GENERATE_INFOPLIST_FILE: "YES"
+    dependencies:
+      - target: Scan OCR KTP
+      - framework: Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework
+        embed: false
+    preBuildScripts:
+      - script: |
+          diff "${PODS_PODFILE_DIR_PATH}/Podfile.lock" "${PODS_ROOT}/Manifest.lock" > /dev/null
+          if [ $? != 0 ] ; then
+              echo "error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation." >&2
+              exit 1
+          fi
+          echo "SUCCESS" > "${SCRIPT_OUTPUT_FILE_0}"
+        name: "[CP] Check Pods Manifest.lock"
+        inputFiles:
+          - "${PODS_PODFILE_DIR_PATH}/Podfile.lock"
+          - "${PODS_ROOT}/Manifest.lock"
+        outputFiles:
+          - "$(DERIVED_FILE_DIR)/Pods-Scan OCR KTP-Scan OCR KTPUITests-checkManifestLockResult.txt"
+        basedOnDependencyAnalysis: false
+
+schemes:
+  Scan OCR KTP:
+    build:
+      targets:
+        Scan OCR KTP: all
+    run:
+      config: Debug
+      commandLineArguments:
+        "-com.apple.CoreData.ConcurrencyDebug": 1
+      environmentVariables:
+        - variable: IDEPreferLogStreaming
+          value: "YES"
+          isEnabled: true
+    test:
+      config: Debug
+      gatherCoverageData: true
+      coverageTargets:
+        - Scan OCR KTP
+      targets:
+        - name: Scan OCR KTPTests
+          parallelizable: true
+          randomExecutionOrder: true
+        - name: Scan OCR KTPUITests
+          parallelizable: false
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
