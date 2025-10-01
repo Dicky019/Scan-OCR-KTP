@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "serena": {
+      "command": "uvx",
+      "args": [
+        "--quiet",
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "ide-assistant",
+        "--project=/Users/dickydarmawan/Devs/Scan OCR KTP"
+      ],
+      "env": {
+        "UV_NO_PROGRESS": "1",
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}

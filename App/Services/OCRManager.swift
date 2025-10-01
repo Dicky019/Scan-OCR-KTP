@@ -14,9 +14,9 @@ class OCRManager: ObservableObject {
 #if !targetEnvironment(simulator)
   private let mlkitService = MLKitOCRService()
 #endif
-  private let ktpParser = KTPParser()
+  private let ktpParser = KTPParserAdapter()
   private let logger = OCRLogger.shared
-  
+
   func processImage(_ image: UIImage) async -> OCRComparisonResult {
     let sessionId = logger.startSession()
     
@@ -121,14 +121,13 @@ class OCRManager: ObservableObject {
     do {
       let result = try await visionService.recognizeText(from: image, sessionId: sessionId)
       logger.logProcess("Vision OCR text recognition completed", details: "Text length: \(result.text.count)", sessionId: sessionId)
-      
+
       let parsingOperationId = logger.logPerformanceStart("Vision_KTP_Parsing", engine: .vision, sessionId: sessionId)
-      let ktpData = ktpParser.parseKTPData(
-        from: result.text,
+      let ktpData = ktpParser.parse(
+        text: result.text,
         confidence: result.confidence,
         engine: .vision,
-        processingTime: result.processingTime,
-        sessionId: sessionId
+        processingTime: result.processingTime
       )
       logger.logPerformanceEnd(parsingOperationId, sessionId: sessionId, result: "Parsing complete")
       
@@ -151,14 +150,13 @@ class OCRManager: ObservableObject {
     do {
       let result = try await mlkitService.recognizeText(from: image, sessionId: sessionId)
       logger.logProcess("MLKit OCR text recognition completed", details: "Text length: \(result.text.count)", sessionId: sessionId)
-      
+
       let parsingOperationId = logger.logPerformanceStart("MLKit_KTP_Parsing", engine: .mlkit, sessionId: sessionId)
-      let ktpData = ktpParser.parseKTPData(
-        from: result.text,
+      let ktpData = ktpParser.parse(
+        text: result.text,
         confidence: result.confidence,
         engine: .mlkit,
-        processingTime: result.processingTime,
-        sessionId: sessionId
+        processingTime: result.processingTime
       )
       logger.logPerformanceEnd(parsingOperationId, sessionId: sessionId, result: "Parsing complete")
       

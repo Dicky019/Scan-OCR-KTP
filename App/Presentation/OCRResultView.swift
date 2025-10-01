@@ -10,62 +10,64 @@ import SwiftUI
 struct OCRResultNavigationView: View {
   let image: UIImage
   let imageId: String
-  
+
   @EnvironmentObject var coordinator: NavigationCoordinator
-  @State private var isProcessing = true
-  @State private var ocrResults: OCRComparisonResult?
+  @StateObject private var viewModel = OCRProcessingViewModel()
   @State private var selectedEngine: OCREngine = .vision
   @State private var showingPerformanceDetails = false
-  @State private var processingTask: Task<Void, Never>?
-  
-  private let logger = OCRLogger.shared
-  private let ocrManager = OCRManager()
   
   var body: some View {
     VStack {
-      if isProcessing {
+      switch viewModel.state {
+      case .idle, .processing:
         // Processing State
         VStack(spacing: 20) {
           ProgressView()
             .scaleEffect(1.5)
-          
+
           Text("Processing OCR...")
             .font(.headline)
-          
+
           Text("Analyzing your KTP image")
             .font(.subheadline)
             .foregroundColor(.secondary)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-      } else if let results = ocrResults {
+
+      case .success:
         // Results State
-        OCRResultsContentView(
-          results: results,
-          originalImage: image,
-          selectedEngine: $selectedEngine,
-          showingPerformanceDetails: $showingPerformanceDetails
-        )
-      } else {
+        if let results = viewModel.comparisonResult {
+          OCRResultsContentView(
+            results: results,
+            originalImage: image,
+            selectedEngine: $selectedEngine,
+            showingPerformanceDetails: $showingPerformanceDetails
+          )
+        }
+
+      case .error(let message):
         // Error State
         VStack(spacing: 20) {
           Image(systemName: "exclamationmark.triangle")
             .font(.system(size: 60))
             .foregroundColor(.orange)
-          
+
           Text("OCR Processing Failed")
             .font(.title2)
             .fontWeight(.bold)
-          
-          Text("Unable to process the image. Please try again.")
+
+          Text(message)
             .font(.body)
             .foregroundColor(.secondary)
             .multilineTextAlignment(.center)
-          
+
           Button("Try Again") {
-            processOCR()
+            Task {
+              await viewModel.processImageWithComparison(image)
+            }
           }
           .buttonStyle(.borderedProminent)
-          
+
           Button("Go Back") {
             coordinator.pop()
           }
@@ -74,53 +76,13 @@ struct OCRResultNavigationView: View {
         .padding()
       }
     }
-    .onAppear {
-      processOCR()
-    }
-    .onDisappear {
-      processingTask?.cancel()
+    .task {
+      await viewModel.processImageWithComparison(image)
     }
     .toolbar {
       ToolbarItem(placement: .navigationBarTrailing) {
         Button("Home") {
           coordinator.popToRoot()
-        }
-      }
-    }
-  }
-  
-  private func processOCR() {
-    isProcessing = true
-    ocrResults = nil
-    
-    // Cancel any existing task
-    processingTask?.cancel()
-    
-    processingTask = Task {
-      do {
-        logger.logUIEvent("OCR processing started", details: "Image ID: \(imageId)")
-        let results = await ocrManager.processImage(image)
-        
-        guard !Task.isCancelled else {
-          logger.logUIEvent("OCR processing cancelled")
-          return
-        }
-        
-        await MainActor.run {
-          self.ocrResults = results
-          self.isProcessing = false
-          logger.logUIEvent("OCR processing completed", details: "Success: \(results.visionResult != nil || results.mlkitResult != nil)")
-        }
-      } catch {
-        guard !Task.isCancelled else {
-          logger.logUIEvent("OCR processing cancelled")
-          return
-        }
-        
-        await MainActor.run {
-          self.isProcessing = false
-          self.ocrResults = nil
-          logger.logError("OCR processing failed", error: error)
         }
       }
     }
@@ -230,6 +192,7 @@ struct KTPDataDisplayView: View {
         KTPFieldView(label: "Pekerjaan", value: data.pekerjaan)
         KTPFieldView(label: "Kewarganegaraan", value: data.kewarganegaraan)
         KTPFieldView(label: "Berlaku Hingga", value: data.berlakuHingga)
+        KTPFieldView(label: "Golongan Darah", value: data.golonganDarah)
       }
       
       // Raw Text Section

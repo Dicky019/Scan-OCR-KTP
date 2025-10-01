@@ -24,8 +24,8 @@ struct KTPParserTests {
         Nama: BUDI SANTOSO
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -43,8 +43,8 @@ struct KTPParserTests {
         Tempat/Tgl Lahir: JAKARTA, 15-08-1990
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -59,8 +59,8 @@ struct KTPParserTests {
         Tempat/Tgl Lahir: JAKARTA, 15/08/1990
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -75,8 +75,8 @@ struct KTPParserTests {
         Tempat/Tgl Lahir: JAKARTA, 15-08-1990
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -91,8 +91,8 @@ struct KTPParserTests {
         Jenis Kelamin: LAKI-LAKI
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -107,8 +107,8 @@ struct KTPParserTests {
         Jenis Kelamin: PEREMPUAN
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -123,8 +123,8 @@ struct KTPParserTests {
         RT/RW: 003/005
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -141,8 +141,8 @@ struct KTPParserTests {
         Agama: ISLAM
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -157,8 +157,8 @@ struct KTPParserTests {
         Agama: KRISTEN
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -173,8 +173,8 @@ struct KTPParserTests {
         Status Perkawinan: KAWIN
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -189,8 +189,8 @@ struct KTPParserTests {
         Status Perkawinan: BELUM KAWIN
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -205,8 +205,8 @@ struct KTPParserTests {
         Kewarganegaraan: WNI
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -221,8 +221,8 @@ struct KTPParserTests {
         Berlaku Hingga: SEUMUR HIDUP
         """
     
-    let result = parser.parseKTPData(
-      from: sampleText,
+    let result = parser.parse(
+      text: sampleText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -252,8 +252,8 @@ struct KTPParserTests {
         Berlaku Hingga: SEUMUR HIDUP
         """
     
-    let result = parser.parseKTPData(
-      from: completeKTPText,
+    let result = parser.parse(
+      text: completeKTPText,
       confidence: 0.95,
       engine: .vision,
       processingTime: 0.5
@@ -273,8 +273,8 @@ struct KTPParserTests {
   
   @Test("Handle empty text gracefully")
   func testEmptyText() async throws {
-    let result = parser.parseKTPData(
-      from: "",
+    let result = parser.parse(
+      text: "",
       confidence: 0.0,
       engine: .vision,
       processingTime: 0.1
@@ -289,8 +289,8 @@ struct KTPParserTests {
   func testMalformedText() async throws {
     let malformedText = "RANDOM TEXT WITHOUT KTP DATA 12345"
     
-    let result = parser.parseKTPData(
-      from: malformedText,
+    let result = parser.parse(
+      text: malformedText,
       confidence: 0.5,
       engine: .vision,
       processingTime: 0.3
@@ -316,7 +316,7 @@ struct OCRManagerTests {
   @Test("Process real KTP image with Vision OCR")
   func testProcessRealKTPImage() async throws {
     let manager = OCRManager()
-    let testImage = UIImage(resource: .ktp)
+    let testImage = UIImage(resource: .ktpTesting)
 
     // Process image with Vision OCR
     let result = await manager.processWithVision(testImage)
@@ -336,7 +336,7 @@ struct OCRManagerTests {
   @Test("Process real KTP image with full comparison")
   func testProcessRealKTPImageComparison() async throws {
     let manager = OCRManager()
-    let testImage = UIImage(resource: .ktp)
+    let testImage = UIImage(resource: .ktpTesting)
 
     // Process image with full comparison
     let result = await manager.processImage(testImage)
@@ -359,7 +359,7 @@ struct OCRManagerTests {
   @Test("OCR processing measures performance")
   func testOCRPerformanceMeasurement() async throws {
     let manager = OCRManager()
-    let testImage = UIImage(resource: .ktp)
+    let testImage = UIImage(resource: .ktpTesting)
 
     let startTime = Date()
     let result = await manager.processWithVision(testImage)
@@ -378,7 +378,7 @@ struct OCRManagerTests {
   @Test("OCR extracts text from valid KTP image")
   func testOCRExtractsTextFromKTP() async throws {
     let manager = OCRManager()
-    let testImage = UIImage(resource: .ktp)
+    let testImage = UIImage(resource: .ktpTesting)
 
     let result = await manager.processWithVision(testImage)
 
@@ -398,7 +398,7 @@ struct OCRManagerTests {
   @Test("Process real KTP image with MLKit OCR")
   func testProcessRealKTPImageWithMLKit() async throws {
     let manager = OCRManager()
-    let testImage = UIImage(resource: .ktp)
+    let testImage = UIImage(resource: .ktpTesting)
 
     // Process image with MLKit OCR
     let result = await manager.processWithMLKit(testImage)
@@ -426,7 +426,7 @@ struct OCRManagerTests {
   @Test("Process KTP with dual OCR engines")
   func testProcessKTPWithDualEngines() async throws {
     let manager = OCRManager()
-    let testImage = UIImage(resource: .ktp)
+    let testImage = UIImage(resource: .ktpTesting)
 
     // Process with both engines
     let result = await manager.processImage(testImage)
@@ -481,7 +481,7 @@ struct OCRManagerTests {
   @Test("Compare Vision vs MLKit performance")
   func testCompareVisionVsMLKitPerformance() async throws {
     let manager = OCRManager()
-    let testImage = UIImage(resource: .ktp)
+    let testImage = UIImage(resource: .ktpTesting)
 
     // Process with both engines
     let result = await manager.processImage(testImage)
@@ -525,7 +525,7 @@ struct OCRManagerTests {
   @Test("MLKit extracts KTP fields accurately")
   func testMLKitExtractsKTPFields() async throws {
     let manager = OCRManager()
-    let testImage = UIImage(resource: .ktp)
+    let testImage = UIImage(resource: .ktpTesting)
 
     let result = await manager.processWithMLKit(testImage)
 
@@ -557,7 +557,7 @@ struct OCRManagerTests {
   @Test("Single engine processing with MLKit")
   func testSingleEngineMLKit() async throws {
     let manager = OCRManager()
-    let testImage = UIImage(resource: .ktp)
+    let testImage = UIImage(resource: .ktpTesting)
 
     // Process with MLKit only
     let result = await manager.processWithSingleEngine(testImage, engine: .mlkit)
@@ -671,7 +671,7 @@ struct ModelTests {
   
   @Test("ImageData model initialization")
   func testImageDataInit() {
-    let testImage = UIImage(resource: .ktp)
+    let testImage = UIImage(resource: .ktpTesting)
     let imageData = CapturedImage(
       image: testImage,
       source: .camera

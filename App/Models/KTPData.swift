@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct KTPData {
+// MARK: - KTP Data Model
+
+struct KTPData: Equatable {
   let nik: String?
   let nama: String?
   let tempatLahir: String?
@@ -22,6 +24,7 @@ struct KTPData {
   let pekerjaan: String?
   let kewarganegaraan: String?
   let berlakuHingga: String?
+  let golonganDarah: String?
   let rawText: String
   let confidence: Double
   let ocrEngine: OCREngine
@@ -42,6 +45,7 @@ struct KTPData {
     pekerjaan: String? = nil,
     kewarganegaraan: String? = nil,
     berlakuHingga: String? = nil,
+    golonganDarah: String? = nil,
     rawText: String,
     confidence: Double,
     ocrEngine: OCREngine,
@@ -61,33 +65,10 @@ struct KTPData {
     self.pekerjaan = pekerjaan
     self.kewarganegaraan = kewarganegaraan
     self.berlakuHingga = berlakuHingga
+    self.golonganDarah = golonganDarah
     self.rawText = rawText
     self.confidence = confidence
     self.ocrEngine = ocrEngine
     self.processingTime = processingTime
-  }
-}
-
-enum OCREngine: String, CaseIterable {
-  case vision = "Apple Vision"
-  case mlkit = "Google MLKit"
-}
-
-struct OCRComparisonResult {
-  let visionResult: KTPData?
-  let mlkitResult: KTPData?
-  let processingTime: (vision: Double, mlkit: Double)
-  
-  var hasBothResults: Bool {
-    visionResult != nil && mlkitResult != nil
-  }
-  
-  var bestResult: KTPData? {
-    guard let vision = visionResult, let mlkit = mlkitResult else {
-      return visionResult ?? mlkitResult
-    }
-    
-    // Return result with higher confidence
-    return vision.confidence >= mlkit.confidence ? vision : mlkit
   }
 }

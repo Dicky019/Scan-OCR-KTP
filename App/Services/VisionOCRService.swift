@@ -45,10 +45,10 @@ class VisionOCRService {
         }
         
         guard let observations = request.results as? [VNRecognizedTextObservation] else {
-          self.logger.logError("Vision OCR failed", error: OCRError.noTextFound, sessionId: sessionId)
+          self.logger.logError("Vision OCR failed", error: OCRError.noTextDetected, sessionId: sessionId)
           self.logger.logPerformanceEnd(requestProcessingId, sessionId: sessionId, result: "No observations")
           self.logger.logPerformanceEnd(overallOperationId, sessionId: sessionId, result: "No observations")
-          continuation.resume(throwing: OCRError.noTextFound)
+          continuation.resume(throwing: OCRError.noTextDetected)
           return
         }
         
@@ -123,23 +123,6 @@ class VisionOCRService {
         logger.logPerformanceEnd(overallOperationId, sessionId: sessionId, result: "Error")
         continuation.resume(throwing: error)
       }
-    }
-  }
-}
-
-enum OCRError: Error, LocalizedError {
-  case invalidImage
-  case noTextFound
-  case processingFailed
-  
-  var errorDescription: String? {
-    switch self {
-    case .invalidImage:
-      return "Invalid image provided"
-    case .noTextFound:
-      return "No text found in image"
-    case .processingFailed:
-      return "OCR processing failed"
     }
   }
 }
