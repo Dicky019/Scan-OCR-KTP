@@ -1,6 +1,6 @@
 # Scan OCR KTP
 
-iOS SwiftUI application for OCR scanning of Indonesian ID cards (KTP - Kartu Tanda Penduduk) with dual OCR engines (Apple Vision + Google MLKit).
+iOS SwiftUI application for OCR scanning of Indonesian ID cards (KTP - Kartu Tanda Penduduk) with dual OCR engines (Apple Vision + Google MLKit) and Clean Architecture.
 
 ## Features
 
@@ -9,9 +9,11 @@ iOS SwiftUI application for OCR scanning of Indonesian ID cards (KTP - Kartu Tan
 - 🔍 Dual OCR engines (Apple Vision + Google MLKit)
 - 📊 Performance comparison between OCR engines
 - 🎯 Advanced KTP field extraction with regex
+- 🏗️ Clean Architecture with Domain, Data, and Presentation layers
+- 💉 Dependency Injection with Swinject
 - 🧭 Coordinator pattern navigation
 - 📝 Comprehensive logging system
-- ✅ 67 unit and UI tests
+- ✅ Comprehensive unit and UI tests with Swift Testing
 
 ## Requirements
 
@@ -19,67 +21,22 @@ iOS SwiftUI application for OCR scanning of Indonesian ID cards (KTP - Kartu Tan
 - Xcode 16.4+
 - Swift 5.0
 - CocoaPods
-- XcodeGen (for project generation)
 
 ## Setup
 
 ### 1. Install Dependencies
 
 ```bash
-# Install XcodeGen (if not already installed)
-brew install xcodegen
-
 # Install CocoaPods dependencies
 pod install
 ```
 
-### 2. Generate Xcode Project
-
-This project uses **XcodeGen** to generate the `.xcodeproj` from `project.yml`:
-
-```bash
-# Generate Xcode project
-xcodegen generate
-
-# Or use the shortcut
-xcodegen
-```
-
-### 3. Open Workspace
+### 2. Open Workspace
 
 ```bash
 # Always use the workspace (required for CocoaPods)
 open "Scan OCR KTP.xcworkspace"
 ```
-
-## Development Workflow
-
-### Daily Development
-
-1. **Make changes** to `project.yml` if you need to:
-   - Add new source files
-   - Modify build settings
-   - Add dependencies
-   - Change targets
-
-2. **Regenerate project**:
-   ```bash
-   xcodegen
-   ```
-
-3. **Commit changes**:
-   - Commit `project.yml` (source of truth)
-   - `.xcodeproj` is gitignored (will be regenerated)
-   - Commit `Scan OCR KTP.xcworkspace` (CocoaPods workspace)
-
-### Adding New Files
-
-XcodeGen automatically detects files in the configured directories:
-- `App/` - Main application code
-- `Tests/` - Unit tests
-- `UITests/` - UI tests
-
-Just create your file in the appropriate directory and run `xcodegen` to regenerate.
 
 ## Building
 
@@ -131,72 +88,132 @@ xcodebuild test -workspace "Scan OCR KTP.xcworkspace" \
   -only-testing:Scan_OCR_KTPUITests
 ```
 
+### Test Organization
+
+**Unit Tests** (Tests/):
+- Organized by feature using Swift Testing framework
+- Tagged for selective test execution
+- Categories: Parser, OCR (Vision/MLKit/Dual), Models, Navigation
+
+**UI Tests** (UITests/):
+- Page Object Pattern for maintainability
+- Optimized for faster execution (70% fewer tests)
+- Categories: Home, Camera Flow, Gallery Flow, Navigation, Launch
+
 ## Project Structure
 
 ```
 .
-├── project.yml                 # XcodeGen configuration (source of truth)
-├── Podfile                     # CocoaPods dependencies
-├── Podfile.lock               # CocoaPods lock file
-├── CLAUDE.md                   # Claude Code documentation
-├── PLAN.md                     # Development plan and progress
-├── App/                        # Main application
-│   ├── App.swift              # App entry point
-│   ├── ContentView.swift      # Root view
-│   ├── Models/                # Data models
-│   ├── Navigation/            # Coordinator pattern
-│   ├── Services/              # OCR services and parsers
-│   ├── Utils/                 # Utilities (Logger)
-│   └── Views/                 # SwiftUI views
-├── Tests/                      # Unit tests (43 tests)
-│   └── Tests.swift
-└── UITests/                    # UI tests (24 tests)
-    ├── UITests.swift
-    └── UITestsLaunchTests.swift
+├── Podfile                           # CocoaPods dependencies
+├── Podfile.lock                     # CocoaPods lock file
+├── CLAUDE.md                         # Claude Code documentation
+├── PLAN.md                           # Development plan and progress
+├── App/                              # Main application
+│   ├── App.swift                    # App entry point with DI setup
+│   ├── Presentation/                # Views and ViewModels
+│   │   ├── MainView.swift          # Root view with navigation
+│   │   ├── HomeView.swift          # Home screen
+│   │   ├── CameraView.swift        # Camera capture
+│   │   ├── PhotoPickerView.swift  # Photo picker
+│   │   ├── ImagePreviewView.swift # Image preview
+│   │   └── OCRResultView.swift    # OCR results
+│   ├── Domain/                      # Business logic layer
+│   │   ├── Entities/               # Domain models (KTPData)
+│   │   ├── UseCases/               # Business logic
+│   │   └── Repositories/           # Repository protocols
+│   ├── Data/                        # Data layer
+│   │   ├── Repositories/           # Repository implementations
+│   │   └── Services/               # External services
+│   ├── Core/                        # Shared utilities
+│   │   ├── DI/                     # Dependency Injection
+│   │   ├── Logger/                 # Logging system
+│   │   └── Navigation/             # Navigation coordinator
+│   └── Resources/                   # Assets and resources
+├── Tests/                            # Unit tests
+│   ├── Helpers/                     # Test utilities
+│   │   └── TestTags.swift          # Test tags
+│   ├── Parser/                      # KTP parser tests
+│   ├── OCR/                         # OCR engine tests
+│   ├── Models/                      # Model tests
+│   └── Navigation/                  # Navigation tests
+└── UITests/                          # UI tests
+    ├── Utils/                       # Test base classes
+    ├── Helpers/                     # Test extensions
+    ├── PageObjects/                 # Page object models
+    └── Tests/                       # Test suites
 ```
 
 ## Architecture
 
-### Coordinator Pattern Navigation
+### Clean Architecture Layers
 
-- **NavigationCoordinator**: Manages navigation stack and image storage
-- **AppRoute**: Defines all app routes
-- **NavigationFactory**: Creates views for routes
+**Presentation Layer** (App/Presentation/):
+- SwiftUI views and view logic
+- Coordinator pattern for navigation
+- No direct dependency on data sources
 
-### Dual OCR Engine
+**Domain Layer** (App/Domain/):
+- Business logic and use cases
+- Domain entities (KTPData, OCRResult)
+- Repository protocols (interfaces)
+- Independent of frameworks
 
+**Data Layer** (App/Data/):
+- Repository implementations
+- OCR services (Vision, MLKit)
+- External service integrations
+
+**Core Layer** (App/Core/):
+- Dependency Injection container (Swinject)
+- Navigation coordinator
+- Logging utilities
+
+### Key Components
+
+**Dependency Injection**:
+- Container setup in App.swift
+- Protocol-based dependencies
+- Easy testing with mock implementations
+
+**OCR Engine**:
 - **VisionOCRService**: Apple's Vision framework
 - **MLKitOCRService**: Google MLKit
-- **OCRManager**: Orchestrates both engines and compares results
+- **ProcessKTPUseCase**: Orchestrates both engines and compares results
 - **KTPParser**: Extracts 14 KTP fields using advanced regex
 
-### Logging System
+**Navigation**:
+- **NavigationCoordinator**: Manages navigation stack and image storage
+- Automatic cleanup of stored images (max 5)
+- Timestamp-based management
 
+**Logging System**:
 - **OCRLogger**: Thread-safe logging with session tracking
 - Performance metrics for both OCR engines
 - Detailed field extraction logging
 
-## XcodeGen Benefits
+## Dependencies
 
-✅ **No Merge Conflicts**: No more `.xcodeproj` conflicts in git
-✅ **Declarative**: Project structure defined in YAML
-✅ **Consistency**: Same project structure across team members
-✅ **Simple**: Easy to add files, targets, and settings
-✅ **Version Control**: `project.yml` is human-readable and diffable
-
-## CocoaPods Dependencies
-
+### CocoaPods
 - **GoogleMLKit/TextRecognition**: Google's ML Kit for text recognition
+- **Swinject**: Dependency Injection container
+
+### System Frameworks
+- Vision: Apple's text recognition
+- AVFoundation: Camera capture
+- PhotosUI: Modern photo picker
+- UIKit: Camera and picker wrappers
 
 ## Known Issues
 
 - MLKit frameworks don't support iOS Simulator linking (build for physical device)
+- Vision framework requires minimum 3x3 pixel images
 - visionOS support removed due to MLKit incompatibility
 
 ## Documentation
 
 - See [CLAUDE.md](CLAUDE.md) for detailed architecture and development guidelines
 - See [PLAN.md](PLAN.md) for feature checklist and progress
+- See [UITests/README.md](UITests/README.md) for UI testing guidelines
 
 ## License
 
