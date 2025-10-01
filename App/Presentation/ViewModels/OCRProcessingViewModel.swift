@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-// MARK: - ViewModel (MVVM Pattern)
-
-/// ViewModel for OCR processing view
-/// Separates presentation logic from view
 @MainActor
 final class OCRProcessingViewModel: ObservableObject {
 

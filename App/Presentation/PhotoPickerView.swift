@@ -1,5 +1,5 @@
 //
-//  PhotoPickerNavigationView.swift
+//  PhotoPickerView.swift
 //  Scan OCR KTP
 //
 //  Created by Dicky Darmawan on 29/09/25.
@@ -8,7 +8,7 @@
 import SwiftUI
 import PhotosUI
 
-struct PhotoPickerNavigationView: UIViewControllerRepresentable {
+struct PhotoPickerView: UIViewControllerRepresentable {
   @EnvironmentObject var coordinator: NavigationCoordinator
   @Environment(\.dismiss) var dismiss
   
@@ -31,9 +31,9 @@ struct PhotoPickerNavigationView: UIViewControllerRepresentable {
   }
   
   class Coordinator: NSObject, PHPickerViewControllerDelegate {
-    let parent: PhotoPickerNavigationView
+    let parent: PhotoPickerView
     
-    init(_ parent: PhotoPickerNavigationView) {
+    init(_ parent: PhotoPickerView) {
       self.parent = parent
     }
     
@@ -66,7 +66,7 @@ struct PhotoPickerNavigationView: UIViewControllerRepresentable {
 
 #Preview {
   NavigationStack {
-    PhotoPickerNavigationView()
+    PhotoPickerView()
       .environmentObject(NavigationCoordinator())
   }
 }

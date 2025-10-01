@@ -21,20 +21,20 @@ struct NavigationFactory {
         .environmentObject(coordinator)
       
     case .camera:
-      CameraNavigationView()
+      CameraView()
         .environmentObject(coordinator)
         .navigationTitle(route.title)
         .navigationBarTitleDisplayMode(.inline)
       
     case .photoPicker:
-      PhotoPickerNavigationView()
+      PhotoPickerView()
         .environmentObject(coordinator)
         .navigationTitle(route.title)
         .navigationBarTitleDisplayMode(.inline)
       
     case .imagePreview(let imageId):
       if let image = coordinator.getImage(by: imageId) {
-        ImagePreviewNavigationView(image: image, imageId: imageId)
+        ImagePreviewView(image: image, imageId: imageId)
           .environmentObject(coordinator)
           .navigationTitle(route.title)
           .navigationBarTitleDisplayMode(.inline)
@@ -51,7 +51,7 @@ struct NavigationFactory {
       
     case .ocrResults(let imageId):
       if let image = coordinator.getImage(by: imageId) {
-        OCRResultNavigationView(image: image, imageId: imageId)
+        OCRResultView(image: image, imageId: imageId)
           .environmentObject(coordinator)
           .navigationTitle(route.title)
           .navigationBarTitleDisplayMode(.inline)

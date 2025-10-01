@@ -1,5 +1,5 @@
 //
-//  OCRResultNavigationView.swift
+//  OCRResultView.swift
 //  Scan OCR KTP
 //
 //  Created by Dicky Darmawan on 29/09/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OCRResultNavigationView: View {
+struct OCRResultView: View {
   let image: UIImage
   let imageId: String
 
@@ -392,7 +392,7 @@ struct PerformanceComparisonView: View {
 
 #Preview {
   NavigationStack {
-    OCRResultNavigationView(
+    OCRResultView(
       image: UIImage(systemName: "photo")!,
       imageId: "preview-id"
     )

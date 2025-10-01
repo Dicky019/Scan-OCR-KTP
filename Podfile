@@ -2,11 +2,10 @@
 platform :ios, '18.5'
 
 target 'Scan OCR KTP' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  use_frameworks! :linkage => :static
 
   # Pods for Scan OCR KTP
-  pod 'GoogleMLKit/TextRecognition'  # Temporarily disabled for simulator testing
+  pod 'GoogleMLKit/TextRecognition'
 
   target 'Scan OCR KTPTests' do
     inherit! :search_paths
@@ -55,5 +54,23 @@ post_install do |installer|
         config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
       end
     end
+  end
+
+  # Fix unbound variable error in frameworks script
+  frameworks_script_path = 'Pods/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-frameworks.sh'
+  if File.exist?(frameworks_script_path)
+    script_content = File.read(frameworks_script_path)
+    # Fix: initialize source variable and add else clause
+    fixed_content = script_content.gsub(
+      /install_framework\(\)\n\{\n  if \[ -r "\$\{BUILT_PRODUCTS_DIR\}\/\$1" \]; then\n    local source=/,
+      "install_framework()\n{\n  local source=\"\"\n  if [ -r \"\${BUILT_PRODUCTS_DIR}/\$1\" ]; then\n    source="
+    ).gsub(
+      /  elif \[ -r "\$\{BUILT_PRODUCTS_DIR\}\/\$\(basename "\$1"\)" \]; then\n    local source=/,
+      "  elif [ -r \"\${BUILT_PRODUCTS_DIR}/\$(basename \"\$1\")\" ]; then\n    source="
+    ).gsub(
+      /  elif \[ -r "\$1" \]; then\n    local source="([^"]+)"\n  fi\n\n  local destination=/,
+      "  elif [ -r \"\$1\" ]; then\n    source=\\1\n  else\n    echo \"error: framework not found: \$1\"\n    return 1\n  fi\n\n  local destination="
+    )
+    File.write(frameworks_script_path, fixed_content)
   end
 end

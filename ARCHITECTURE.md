@@ -64,9 +64,9 @@ App/
 │   │   └── OCRProcessingViewModel.swift
 │   └── Views/                  # SwiftUI Views
 │       ├── HomeView.swift
-│       ├── CameraNavigationView.swift
-│       ├── PhotoPickerNavigationView.swift
-│       └── OCRResultNavigationView.swift
+│       ├── CameraView.swift
+│       ├── PhotoPickerView.swift
+│       └── OCRResultView.swift
 │
 ├── Core/                        # Shared components
 │   ├── DI/                     # Dependency Injection
@@ -329,7 +329,7 @@ func testOCRRepositoryIntegration() async {
 
 ## Next Steps
 
-1. ✅ Migrate `OCRResultNavigationView` to use `OCRProcessingViewModel`
+1. ✅ Migrate `OCRResultView` to use `OCRProcessingViewModel`
 2. ✅ Create `HomeViewModel` for home screen logic
 3. ✅ Add unit tests for new architecture
 4. ✅ Update documentation

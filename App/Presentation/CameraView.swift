@@ -1,5 +1,5 @@
 //
-//  CameraNavigationView.swift
+//  CameraView.swift
 //  Scan OCR KTP
 //
 //  Created by Dicky Darmawan on 29/09/25.
@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-struct CameraNavigationView: UIViewControllerRepresentable {
+struct CameraView: UIViewControllerRepresentable {
   @EnvironmentObject var coordinator: NavigationCoordinator
   @Environment(\.dismiss) var dismiss
   
@@ -49,9 +49,9 @@ struct CameraNavigationView: UIViewControllerRepresentable {
   }
   
   class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    let parent: CameraNavigationView
+    let parent: CameraView
     
-    init(_ parent: CameraNavigationView) {
+    init(_ parent: CameraView) {
       self.parent = parent
     }
     
@@ -81,7 +81,7 @@ struct CameraNavigationView: UIViewControllerRepresentable {
 
 #Preview {
   NavigationStack {
-    CameraNavigationView()
+    CameraView()
       .environmentObject(NavigationCoordinator())
   }
 }

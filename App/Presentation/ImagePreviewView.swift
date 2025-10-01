@@ -1,5 +1,5 @@
 //
-//  ImagePreviewNavigationView.swift
+//  ImagePreviewView.swift
 //  Scan OCR KTP
 //
 //  Created by Dicky Darmawan on 29/09/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ImagePreviewNavigationView: View {
+struct ImagePreviewView: View {
   let image: UIImage
   let imageId: String
   
@@ -90,7 +90,7 @@ struct ImagePreviewNavigationView: View {
 
 #Preview {
   NavigationStack {
-    ImagePreviewNavigationView(
+    ImagePreviewView(
       image: UIImage(systemName: "photo")!,
       imageId: "preview-id"
     )

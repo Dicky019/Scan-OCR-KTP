@@ -80,7 +80,6 @@
 /* Begin PBXFileReference section */
 		01CD54D259DECA25B15C7EF0 /* NavigationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationFactory.swift; sourceTree = "<group>"; };
 		0A70D0FCBF95CD947F40214F /* MLKitOCRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitOCRTests.swift; sourceTree = "<group>"; };
-		0BA843B5CCFA4940D3E28736 /* Pods-Scan OCR KTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.release.xcconfig"; sourceTree = "<group>"; };
 		0C2F7AB800CE4487539FE9B5 /* GalleryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryScreen.swift; sourceTree = "<group>"; };
 		0F83C7F05B55D6D03D0C5894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19031C73146A7C512AF7616B /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
@@ -99,7 +98,6 @@
 		53D373AE6A884BB54686E1DC /* CameraFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFlowTests.swift; sourceTree = "<group>"; };
 		5730192BDB743156BABB0ED7 /* OCRProcessingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRProcessingViewModel.swift; sourceTree = "<group>"; };
 		59009646392D7E0051A86CF8 /* VisionOCRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOCRTests.swift; sourceTree = "<group>"; };
-		61BB98D600D4E73D71527C3A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		62D05ADA299B26473CABB3B9 /* VisionOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOCRService.swift; sourceTree = "<group>"; };
 		6632B3DFCC584A6D140B5D46 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		673FC32212FB3EE24A033F35 /* KTPParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTPParserProtocol.swift; sourceTree = "<group>"; };
@@ -107,13 +105,15 @@
 		6C95D53F85C8824B15BD616C /* ProcessKTPImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessKTPImageUseCase.swift; sourceTree = "<group>"; };
 		70C74A646AED265C787A9264 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		76D149C0104CC86B69DF4410 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7CB052D0A6EEE97F4F2A92D1 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7B8111085F3ADE888031E564 /* Pods-Scan OCR KTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.debug.xcconfig"; sourceTree = "<group>"; };
 		7CDA187633E9E93B6631ABEB /* OCRLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRLogger.swift; sourceTree = "<group>"; };
 		823E05B60E8725016F372E89 /* DualEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualEngineTests.swift; sourceTree = "<group>"; };
 		85F263658FBF2F8624D12302 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		8BBAC907717070C35D878C73 /* VisionOCRServiceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOCRServiceAdapter.swift; sourceTree = "<group>"; };
 		8E72787D77B56AA3167D4ACF /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
-		963476B1E41D998D3FD7F84D /* Pods-Scan OCR KTPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		949121887664759881539D9E /* Pods-Scan OCR KTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.release.xcconfig"; sourceTree = "<group>"; };
+		95D7FF8C58E064B6387BC955 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9976D9A07A3B2FF467574D75 /* Pods-Scan OCR KTPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9DCF444243F797F015208567 /* OCRResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRResult.swift; sourceTree = "<group>"; };
 		A58EB6C35142ADD7CC0DAB8E /* GalleryFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryFlowTests.swift; sourceTree = "<group>"; };
 		B217A2BDCFCDFB08235D96B2 /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
@@ -121,14 +121,15 @@
 		B6E8405AE2C94567AA7BA108 /* KTPParserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTPParserAdapter.swift; sourceTree = "<group>"; };
 		B99905DA961E5944DE92623B /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		BB65381274346B68B80C53F3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		BEAA14A20D5C229311A79A8F /* Pods-Scan OCR KTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.debug.xcconfig"; sourceTree = "<group>"; };
 		C1DF13D8BBDD7CC8606BE76E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		C2EEB7FE6537C66D6BA96A3B /* HomeScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTests.swift; sourceTree = "<group>"; };
 		C3780DA59485D882874D862F /* UITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestBase.swift; sourceTree = "<group>"; };
+		D2304FD6DDFF17B683D6E30B /* Pods-Scan OCR KTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.release.xcconfig"; sourceTree = "<group>"; };
 		DA99D33050CAA0EA32E57616 /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
 		E092D5835D6E93C9AFED296A /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
 		E0D23181427FBFFD804846C2 /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework; sourceTree = "<group>"; };
 		E23EA300EEA79F1958ED23BF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E4E18EB357B023D09281E793 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9D8DE34498786D5A04644F4 /* MLKitOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitOCRService.swift; sourceTree = "<group>"; };
 		EAF13B6C9803F5D538F3A0F8 /* TestTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTags.swift; sourceTree = "<group>"; };
 		EC74A9568D71D23BBFB5B08A /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
@@ -137,7 +138,6 @@
 		F050658226FA0CF1B12D9A44 /* OCRRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRRepository.swift; sourceTree = "<group>"; };
 		F57E13D5F17A3EFD5560F576 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F62F7B61ABF59BBEEB4912F8 /* Pods_Scan_OCR_KTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_Scan_OCR_KTP.framework; sourceTree = "<group>"; };
-		FBCF822881F54DD8E679427E /* Pods-Scan OCR KTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.release.xcconfig"; sourceTree = "<group>"; };
 		FEEEEE508F8D2BA4D025F023 /* Scan OCR KTPUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "Scan OCR KTPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -169,6 +169,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075B03270001CAEBA5F4849A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B8111085F3ADE888031E564 /* Pods-Scan OCR KTP.debug.xcconfig */,
+				D2304FD6DDFF17B683D6E30B /* Pods-Scan OCR KTP.release.xcconfig */,
+				E4E18EB357B023D09281E793 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */,
+				95D7FF8C58E064B6387BC955 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */,
+				9976D9A07A3B2FF467574D75 /* Pods-Scan OCR KTPTests.debug.xcconfig */,
+				949121887664759881539D9E /* Pods-Scan OCR KTPTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		0B4B5F7B90FB0EC238BBE8E6 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +197,13 @@
 				6C95D53F85C8824B15BD616C /* ProcessKTPImageUseCase.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		14D969E38A894CB26BC20B18 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		1F80B9B0086CDCA0100034C9 /* Products */ = {
@@ -245,20 +266,6 @@
 				E7D760FA24655B65D00DF21F /* Utils */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		3DC2624C160E4509388641D8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BEAA14A20D5C229311A79A8F /* Pods-Scan OCR KTP.debug.xcconfig */,
-				FBCF822881F54DD8E679427E /* Pods-Scan OCR KTP.release.xcconfig */,
-				61BB98D600D4E73D71527C3A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */,
-				7CB052D0A6EEE97F4F2A92D1 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */,
-				963476B1E41D998D3FD7F84D /* Pods-Scan OCR KTPTests.debug.xcconfig */,
-				0BA843B5CCFA4940D3E28736 /* Pods-Scan OCR KTPTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		3E69797CD53253C4C25DD850 /* Repositories */ = {
@@ -328,7 +335,7 @@
 				81D78E29FD07E71F2CC457F6 /* UITests */,
 				6D43D7E38AFCA458F5AC5901 /* Frameworks */,
 				1F80B9B0086CDCA0100034C9 /* Products */,
-				3DC2624C160E4509388641D8 /* Pods */,
+				075B03270001CAEBA5F4849A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -379,6 +386,7 @@
 				92C9B403C88F63736307A186 /* Helpers */,
 				415787F25D50C145182D1677 /* PageObjects */,
 				57EDEFE9FCF875B29E829A4A /* Tests */,
+				14D969E38A894CB26BC20B18 /* Utils */,
 				76D149C0104CC86B69DF4410 /* README.md */,
 			);
 			path = UITests;
@@ -489,8 +497,7 @@
 				DEBAF3C98FAFF35CD3C6F6FE /* Sources */,
 				240A9E999D61C435F02A4400 /* Resources */,
 				0E42511AD8A39B371D5F39A5 /* Frameworks */,
-				C875A5076970B5A9541F6F7C /* [CP] Embed Pods Frameworks */,
-				8FF1F59EB5B5FC7CF035291D /* [CP] Copy Pods Resources */,
+				0E0FA573375017A365375E70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -507,7 +514,6 @@
 			buildConfigurationList = 78552264D41D8049A87BC251 /* Build configuration list for PBXNativeTarget "Scan OCR KTP" */;
 			buildPhases = (
 				FE1E9AA53FA46E1783BC18CA /* [CP] Check Pods Manifest.lock */,
-				EFA06C73A2243776F3A276FB /* [CP] Embed Pods Frameworks */,
 				2017192637AE857A192F95FB /* [CP] Copy Pods Resources */,
 				A5F07B1AEEE9C1EBD3C8B9BC /* Sources */,
 				69844104E44CCFDF5671C2FC /* Resources */,
@@ -615,6 +621,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0E0FA573375017A365375E70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2017192637AE857A192F95FB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -654,40 +677,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 		};
-		8FF1F59EB5B5FC7CF035291D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C875A5076970B5A9541F6F7C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DDBE3B78A3B55A19A59F9E39 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -709,23 +698,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-		};
-		EFA06C73A2243776F3A276FB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-frameworks.sh\"\n";
 		};
 		FE1E9AA53FA46E1783BC18CA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -836,7 +808,7 @@
 /* Begin XCBuildConfiguration section */
 		0790FD7A7BAF1053F7BB454D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 963476B1E41D998D3FD7F84D /* Pods-Scan OCR KTPTests.debug.xcconfig */;
+			baseConfigurationReference = 9976D9A07A3B2FF467574D75 /* Pods-Scan OCR KTPTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -929,7 +901,7 @@
 		};
 		48A84F605A771A239D997397 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CB052D0A6EEE97F4F2A92D1 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */;
+			baseConfigurationReference = 95D7FF8C58E064B6387BC955 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -951,7 +923,7 @@
 		};
 		4E2B61116111E18645AA6A9F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BA843B5CCFA4940D3E28736 /* Pods-Scan OCR KTPTests.release.xcconfig */;
+			baseConfigurationReference = 949121887664759881539D9E /* Pods-Scan OCR KTPTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -973,7 +945,7 @@
 		};
 		4F7D14FDEB25687E2C312B47 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBCF822881F54DD8E679427E /* Pods-Scan OCR KTP.release.xcconfig */;
+			baseConfigurationReference = D2304FD6DDFF17B683D6E30B /* Pods-Scan OCR KTP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1077,7 +1049,7 @@
 		};
 		97BD27BCF74A10F7F46B20E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61BB98D600D4E73D71527C3A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */;
+			baseConfigurationReference = E4E18EB357B023D09281E793 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1099,7 +1071,7 @@
 		};
 		9B97388DE08EC4B2D83AE773 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEAA14A20D5C229311A79A8F /* Pods-Scan OCR KTP.debug.xcconfig */;
+			baseConfigurationReference = 7B8111085F3ADE888031E564 /* Pods-Scan OCR KTP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

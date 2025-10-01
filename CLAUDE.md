@@ -48,10 +48,10 @@ The app processes images with **both** Apple Vision and Google MLKit simultaneou
 All views follow the **Navigation View** pattern, integrating with the coordinator:
 
 - **HomeView**: Entry point with Camera and Gallery buttons
-- **CameraNavigationView**: `UIViewControllerRepresentable` wrapping `UIImagePickerController` for camera
-- **PhotoPickerNavigationView**: `UIViewControllerRepresentable` wrapping `PHPickerViewController` for photo library
-- **ImagePreviewNavigationView**: Shows captured image with "Process OCR" button
-- **OCRResultNavigationView**: Displays dual OCR results with performance metrics and engine comparison
+- **CameraView**: `UIViewControllerRepresentable` wrapping `UIImagePickerController` for camera
+- **PhotoPickerView**: `UIViewControllerRepresentable` wrapping `PHPickerViewController` for photo library
+- **ImagePreviewView**: Shows captured image with "Process OCR" button
+- **OCRResultView**: Displays dual OCR results with performance metrics and engine comparison
 
 **Pattern:** Views inject coordinator via `@EnvironmentObject`, use state for local UI, and cancel tasks in `.onDisappear` for proper cleanup.
 
@@ -182,10 +182,10 @@ App/
 │   └── OCRLogger.swift                 # Thread-safe logging with sessions
 └── Views/
     ├── HomeView.swift                  # Main menu
-    ├── CameraNavigationView.swift      # Camera capture wrapper
-    ├── PhotoPickerNavigationView.swift # Photo picker wrapper
-    ├── ImagePreviewNavigationView.swift # Image preview before OCR
-    └── OCRResultNavigationView.swift   # Dual OCR results display
+    ├── CameraView.swift      # Camera capture wrapper
+    ├── PhotoPickerView.swift # Photo picker wrapper
+    ├── ImagePreviewView.swift # Image preview before OCR
+    └── OCRResultView.swift   # Dual OCR results display
 
 Tests/
 └── Tests.swift                         # Swift Testing framework tests
