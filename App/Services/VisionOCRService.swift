@@ -14,18 +14,27 @@ class VisionOCRService {
   
   func recognizeText(from image: UIImage, sessionId: String? = nil) async throws -> (text: String, confidence: Double, processingTime: Double) {
     logger.logProcess("Starting Vision OCR text recognition", sessionId: sessionId)
-    
+
     let imageSize = image.size
     logger.logPerformanceMetric("image_width", value: Double(imageSize.width), engine: .vision, sessionId: sessionId)
     logger.logPerformanceMetric("image_height", value: Double(imageSize.height), engine: .vision, sessionId: sessionId)
     logger.logPerformanceMetric("image_scale", value: Double(image.scale), engine: .vision, sessionId: sessionId)
-    
+
     let overallOperationId = logger.logPerformanceStart("Vision_OCR_Complete", engine: .vision, sessionId: sessionId)
     let startTime = CFAbsoluteTimeGetCurrent()
-    
+
     guard let cgImage = image.cgImage else {
       logger.logError("Vision OCR failed", error: OCRError.invalidImage, sessionId: sessionId)
       throw OCRError.invalidImage
+    }
+
+    // Vision framework requires images to be at least 3x3 pixels
+    let minDimension = 3
+    guard cgImage.width >= minDimension && cgImage.height >= minDimension else {
+      let error = OCRError.imageTooSmall(width: cgImage.width, height: cgImage.height, minimum: minDimension)
+      logger.logError("Vision OCR failed", error: error, sessionId: sessionId)
+      logger.logPerformanceEnd(overallOperationId, sessionId: sessionId, result: "Image too small")
+      throw error
     }
     
     logger.logProcess("CGImage conversion successful", details: "Size: \(cgImage.width)x\(cgImage.height)", sessionId: sessionId)

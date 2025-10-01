@@ -26,6 +26,7 @@ enum OCRError: Error, Equatable {
   case processingFailed(String)
   case noTextDetected
   case invalidImage
+  case imageTooSmall(width: Int, height: Int, minimum: Int)
   case timeout
 
   var localizedDescription: String {
@@ -38,6 +39,8 @@ enum OCRError: Error, Equatable {
       return "No text detected in image"
     case .invalidImage:
       return "Invalid or corrupted image"
+    case .imageTooSmall(let width, let height, let minimum):
+      return "Image is too small (\(width)x\(height)). Each dimension must be at least \(minimum) pixels"
     case .timeout:
       return "OCR processing timeout"
     }

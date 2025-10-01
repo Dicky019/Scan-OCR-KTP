@@ -208,3 +208,5 @@ echo ""
 echo "Note: MLKit doesn't support iOS Simulator."
 echo "      Build for physical device to test dual OCR."
 echo ""
+
+open Scan\ OCR\ KTP.xcworkspace

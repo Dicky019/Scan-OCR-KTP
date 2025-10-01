@@ -3,44 +3,58 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01C25E81C26891DB20B372DA /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A150C3AEE66E5EFAFF293 /* PhotoPickerView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
 		01D8EEF4A65403F0A2CF62DA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DF13D8BBDD7CC8606BE76E /* App.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
-		0DE5E61C203F6A8019403732 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613897788B54B79A85D9C9F4 /* UITests.swift */; };
-		0E7552F9E4C74805429D7951 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D111C9DBF7239EA7738DF10 /* HomeView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		1037B1DAA63B73C0AB6457DF /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4E995F572F466C0E445E8 /* PhotoPickerView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		1160E667A8DA8A5FA6DF06ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F57E13D5F17A3EFD5560F576 /* README.md */; };
 		13D5B3A2F32EABBDF0898F3F /* OCRRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332A305EAAABB7EEDD7E638 /* OCRRepositoryProtocol.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
-		1F9AAD0D123FE590C484E1B3 /* GalleryFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144C0D0CC274C5E94BD432E /* GalleryFlowUITests.swift */; };
-		1FDD436D54C75BEB639DF44D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5B8E7969459CA8D121C3C /* CameraView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		2072DE27F8B99E8049FB57C6 /* GalleryFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EB6C35142ADD7CC0DAB8E /* GalleryFlowTests.swift */; };
 		20B971DBAB8AD8AAD92D048D /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D23181427FBFFD804846C2 /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework */; };
 		26A2780C9E67363E27CA22FD /* KTPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254ADD82920B3035E8C13DBD /* KTPParser.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
 		270CEFC69B100F13CF8781C7 /* Pods_Scan_OCR_KTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62F7B61ABF59BBEEB4912F8 /* Pods_Scan_OCR_KTP.framework */; };
-		351BE98F84E7E337874AEF9B /* CameraFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF443EAB769B44CEE2228991 /* CameraFlowUITests.swift */; };
 		483712BB480AEE0D06F9B9A8 /* KTPFieldExtractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29404050EBCDFB89810E05D /* KTPFieldExtractors.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
-		4BE7DD1B62B2616D8A253D5F /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FDF7BB461822FCEC9E58B7 /* Tests.swift */; };
+		4969F86C9B2B145930565CF1 /* OCRLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA187633E9E93B6631ABEB /* OCRLogger.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		4CF6D883E796E667739547C7 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632B3DFCC584A6D140B5D46 /* CameraView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		4F7BC891ABF9F993D2EC1B53 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA99D33050CAA0EA32E57616 /* NavigationTests.swift */; };
+		51618C3604B56B312C087530 /* ImagePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAFFB32765A0F31CBB7B56A /* ImagePreviewView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
 		534F80AAD30773B3C3F08696 /* KTPParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673FC32212FB3EE24A033F35 /* KTPParserProtocol.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		563FF69CB55865E7B542735E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 76D149C0104CC86B69DF4410 /* README.md */; };
+		5D17CFE3C7E84675902F2C5A /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA389F236D544D9BF2EA15E /* HomeScreen.swift */; };
 		6282209A204735433E40A5FF /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74A9568D71D23BBFB5B08A /* DIContainer.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
 		6785125138F81238EB182AAD /* ProcessKTPImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C95D53F85C8824B15BD616C /* ProcessKTPImageUseCase.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
 		6785FAAE76198E14EBA108CA /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C74A646AED265C787A9264 /* AppRoute.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		6EADCE13F08396AC6BEC543F /* HomeScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EEB7FE6537C66D6BA96A3B /* HomeScreenTests.swift */; };
+		6F87F4C61E6D783CA37DAFD2 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217A2BDCFCDFB08235D96B2 /* NavigationTests.swift */; };
 		714A003ACFFE29A6677AA125 /* OCRLoggerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520DEC94AF922A4C0BE5CDCF /* OCRLoggerAdapter.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		75C89BB4B597F530090D609F /* UITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3780DA59485D882874D862F /* UITestBase.swift */; };
+		7CF320F52AC7EDAE0ECB0965 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E72787D77B56AA3167D4ACF /* LaunchTests.swift */; };
 		8787F2840E13CB4808401580 /* VisionOCRServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAC907717070C35D878C73 /* VisionOCRServiceAdapter.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		8B047322A1560D10E9DC651E /* CameraScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADB528AE4DF2B6385824E40 /* CameraScreen.swift */; };
 		8F49C270750994AA8371F662 /* MLKitOCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8DE34498786D5A04644F4 /* MLKitOCRService.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
 		94168F6623513DF3AC5E2310 /* OCRResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF444243F797F015208567 /* OCRResult.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
-		9D6109690C40FFC4DD6EFB18 /* OCRResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A886C16C9F5EF186E4B631 /* OCRResultView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		969079BEFDEBDC74522E7CCA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23EA300EEA79F1958ED23BF /* HomeView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		99F2B4015C874A4FEF82D097 /* GalleryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2F7AB800CE4487539FE9B5 /* GalleryScreen.swift */; };
+		9D2107A4CB4D8D4EAE3B262D /* DualEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E05B60E8725016F372E89 /* DualEngineTests.swift */; };
 		9F22AA37FF979EDEECA8872B /* VisionOCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D05ADA299B26473CABB3B9 /* VisionOCRService.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
-		A320362AEF501B4DD48C78F2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF4205AB493583390ECD70 /* MainView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
-		AA6D0F9811D619C64AD619F2 /* OCRLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8942E5D1A5AB8BDD5E261311 /* OCRLogger.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
-		AE3D39EDE13B05C85963601E /* ImagePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D36B8A40C558CA5DBBD9C5 /* ImagePreviewView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		A17D223B9062EA9F1DE4A2D3 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19031C73146A7C512AF7616B /* ModelTests.swift */; };
 		B60AEEC9E4CBF88F6E3D33F0 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F263658FBF2F8624D12302 /* NavigationCoordinator.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		B6AA2343B0A9B58C50A34082 /* TestTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF13B6C9803F5D538F3A0F8 /* TestTags.swift */; };
 		BD94F7D137DB68165BE558F3 /* OCRRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F050658226FA0CF1B12D9A44 /* OCRRepository.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		BE29059E4BEA7834DFD71D1A /* KTPParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C68238063F9F45FBBECF3 /* KTPParserTests.swift */; };
+		C08FF13A91E0F1EB2D07FA6D /* OCRResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3E53E4DA88E1CE959804D3 /* OCRResultView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
 		C17B9BFA9DFDA6A05EBCA483 /* OCRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085F4D494A706E48D118D54 /* OCRManager.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
-		D3D1D5C54756684022624599 /* UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007E1CB8F85C9B328CA5D68 /* UITestsLaunchTests.swift */; };
+		C73F5C96DC7298EAEF23D3EA /* CameraFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D373AE6A884BB54686E1DC /* CameraFlowTests.swift */; };
+		D789E61BCDFCF7B7D14BD76B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB65381274346B68B80C53F3 /* MainView.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
 		D944E18E436157402DF70A62 /* KTPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83092445B6E2C7175E7A48 /* KTPData.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		DEB4F0CF320DF0ECC5845433 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA08D2E430590993816718F /* XCTestCase+Extensions.swift */; };
 		DEBC7B3E839F73EB2674FD5E /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99905DA961E5944DE92623B /* ImageData.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
 		E63EC12041EC66375E7016CD /* OCRProcessingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730192BDB743156BABB0ED7 /* OCRProcessingViewModel.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
+		E716D3156D2D29C2F27C7CF8 /* VisionOCRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59009646392D7E0051A86CF8 /* VisionOCRTests.swift */; };
 		E7502E52110DFC43EAC8641C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F83C7F05B55D6D03D0C5894 /* Assets.xcassets */; };
+		F3B8E0C155F049944C8C4BC0 /* MLKitOCRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70D0FCBF95CD947F40214F /* MLKitOCRTests.swift */; };
 		F6EAEF6D25764F81B8246764 /* KTPParserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8405AE2C94567AA7BA108 /* KTPParserAdapter.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
 		FE24C7B4A56BA6CCD674AA4E /* Pods_Scan_OCR_KTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7D3632223EE4B553E59032 /* Pods_Scan_OCR_KTPTests.framework */; };
 		FF52C8D6C718F88304CD2CE6 /* NavigationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD54D259DECA25B15C7EF0 /* NavigationFactory.swift */; settings = {COMPILER_FLAGS = "-DDEBUG"; }; };
@@ -65,52 +79,66 @@
 
 /* Begin PBXFileReference section */
 		01CD54D259DECA25B15C7EF0 /* NavigationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationFactory.swift; sourceTree = "<group>"; };
+		0A70D0FCBF95CD947F40214F /* MLKitOCRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitOCRTests.swift; sourceTree = "<group>"; };
+		0BA843B5CCFA4940D3E28736 /* Pods-Scan OCR KTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.release.xcconfig"; sourceTree = "<group>"; };
+		0C2F7AB800CE4487539FE9B5 /* GalleryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryScreen.swift; sourceTree = "<group>"; };
 		0F83C7F05B55D6D03D0C5894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19031C73146A7C512AF7616B /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		1AC4E995F572F466C0E445E8 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
+		1CAFFB32765A0F31CBB7B56A /* ImagePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewView.swift; sourceTree = "<group>"; };
+		1FA389F236D544D9BF2EA15E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		254ADD82920B3035E8C13DBD /* KTPParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTPParser.swift; sourceTree = "<group>"; };
-		3144C0D0CC274C5E94BD432E /* GalleryFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryFlowUITests.swift; sourceTree = "<group>"; };
+		2AA08D2E430590993816718F /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		3C7D3632223EE4B553E59032 /* Pods_Scan_OCR_KTPTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_Scan_OCR_KTPTests.framework; sourceTree = "<group>"; };
-		3D84AC56750606486AE2F13B /* Scan OCR KTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scan OCR KTPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4007E1CB8F85C9B328CA5D68 /* UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D84AC56750606486AE2F13B /* Scan OCR KTPTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "Scan OCR KTPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4085F4D494A706E48D118D54 /* OCRManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRManager.swift; sourceTree = "<group>"; };
 		4332A305EAAABB7EEDD7E638 /* OCRRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRRepositoryProtocol.swift; sourceTree = "<group>"; };
-		4ED5F3D2DA5E19DF13616EBC /* Scan OCR KTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scan OCR KTP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED5F3D2DA5E19DF13616EBC /* Scan OCR KTP.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Scan OCR KTP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		520DEC94AF922A4C0BE5CDCF /* OCRLoggerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRLoggerAdapter.swift; sourceTree = "<group>"; };
+		522C68238063F9F45FBBECF3 /* KTPParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTPParserTests.swift; sourceTree = "<group>"; };
+		53D373AE6A884BB54686E1DC /* CameraFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFlowTests.swift; sourceTree = "<group>"; };
 		5730192BDB743156BABB0ED7 /* OCRProcessingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRProcessingViewModel.swift; sourceTree = "<group>"; };
-		5E53FE4AC49437BA9B5A1EC9 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		613897788B54B79A85D9C9F4 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		59009646392D7E0051A86CF8 /* VisionOCRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOCRTests.swift; sourceTree = "<group>"; };
+		61BB98D600D4E73D71527C3A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		62D05ADA299B26473CABB3B9 /* VisionOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOCRService.swift; sourceTree = "<group>"; };
+		6632B3DFCC584A6D140B5D46 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		673FC32212FB3EE24A033F35 /* KTPParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTPParserProtocol.swift; sourceTree = "<group>"; };
+		6ADB528AE4DF2B6385824E40 /* CameraScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreen.swift; sourceTree = "<group>"; };
 		6C95D53F85C8824B15BD616C /* ProcessKTPImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessKTPImageUseCase.swift; sourceTree = "<group>"; };
 		70C74A646AED265C787A9264 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		76D149C0104CC86B69DF4410 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7CB052D0A6EEE97F4F2A92D1 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7CDA187633E9E93B6631ABEB /* OCRLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRLogger.swift; sourceTree = "<group>"; };
+		823E05B60E8725016F372E89 /* DualEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualEngineTests.swift; sourceTree = "<group>"; };
 		85F263658FBF2F8624D12302 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
-		8942E5D1A5AB8BDD5E261311 /* OCRLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRLogger.swift; sourceTree = "<group>"; };
-		8B6A150C3AEE66E5EFAFF293 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		8BBAC907717070C35D878C73 /* VisionOCRServiceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOCRServiceAdapter.swift; sourceTree = "<group>"; };
-		8EA85EB71AE59E15D1A17644 /* Pods-Scan OCR KTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.release.xcconfig"; sourceTree = "<group>"; };
-		9D111C9DBF7239EA7738DF10 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8E72787D77B56AA3167D4ACF /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
+		963476B1E41D998D3FD7F84D /* Pods-Scan OCR KTPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9DCF444243F797F015208567 /* OCRResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRResult.swift; sourceTree = "<group>"; };
-		A6BF4205AB493583390ECD70 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		A8A886C16C9F5EF186E4B631 /* OCRResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRResultView.swift; sourceTree = "<group>"; };
-		B1FDF7BB461822FCEC9E58B7 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		A58EB6C35142ADD7CC0DAB8E /* GalleryFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryFlowTests.swift; sourceTree = "<group>"; };
+		B217A2BDCFCDFB08235D96B2 /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
 		B29404050EBCDFB89810E05D /* KTPFieldExtractors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTPFieldExtractors.swift; sourceTree = "<group>"; };
 		B6E8405AE2C94567AA7BA108 /* KTPParserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTPParserAdapter.swift; sourceTree = "<group>"; };
 		B99905DA961E5944DE92623B /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
-		BF443EAB769B44CEE2228991 /* CameraFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFlowUITests.swift; sourceTree = "<group>"; };
+		BB65381274346B68B80C53F3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BEAA14A20D5C229311A79A8F /* Pods-Scan OCR KTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.debug.xcconfig"; sourceTree = "<group>"; };
 		C1DF13D8BBDD7CC8606BE76E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		C85FFA4628A175C44308F6C5 /* Pods-Scan OCR KTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.debug.xcconfig"; sourceTree = "<group>"; };
-		D8D36B8A40C558CA5DBBD9C5 /* ImagePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewView.swift; sourceTree = "<group>"; };
-		DF26803B67F60F0F7F2573FA /* Pods-Scan OCR KTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.release.xcconfig"; sourceTree = "<group>"; };
+		C2EEB7FE6537C66D6BA96A3B /* HomeScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTests.swift; sourceTree = "<group>"; };
+		C3780DA59485D882874D862F /* UITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestBase.swift; sourceTree = "<group>"; };
+		DA99D33050CAA0EA32E57616 /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
 		E092D5835D6E93C9AFED296A /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
 		E0D23181427FBFFD804846C2 /* Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_Scan_OCR_KTP_Scan_OCR_KTPUITests.framework; sourceTree = "<group>"; };
+		E23EA300EEA79F1958ED23BF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E9D8DE34498786D5A04644F4 /* MLKitOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitOCRService.swift; sourceTree = "<group>"; };
+		EAF13B6C9803F5D538F3A0F8 /* TestTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTags.swift; sourceTree = "<group>"; };
 		EC74A9568D71D23BBFB5B08A /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
-		ECB5B8E7969459CA8D121C3C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		EDA7DEAA8A15448FF71FCDCB /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ED3E53E4DA88E1CE959804D3 /* OCRResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRResultView.swift; sourceTree = "<group>"; };
 		EF83092445B6E2C7175E7A48 /* KTPData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTPData.swift; sourceTree = "<group>"; };
 		F050658226FA0CF1B12D9A44 /* OCRRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRRepository.swift; sourceTree = "<group>"; };
+		F57E13D5F17A3EFD5560F576 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F62F7B61ABF59BBEEB4912F8 /* Pods_Scan_OCR_KTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_Scan_OCR_KTP.framework; sourceTree = "<group>"; };
-		FD1FC7EAF04C0EF092871B75 /* Pods-Scan OCR KTPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTPTests.debug.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTPTests/Pods-Scan OCR KTPTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FEEEEE508F8D2BA4D025F023 /* Scan OCR KTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scan OCR KTPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCF822881F54DD8E679427E /* Pods-Scan OCR KTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan OCR KTP.release.xcconfig"; path = "Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP.release.xcconfig"; sourceTree = "<group>"; };
+		FEEEEE508F8D2BA4D025F023 /* Scan OCR KTPUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "Scan OCR KTPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +169,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B4B5F7B90FB0EC238BBE8E6 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DA99D33050CAA0EA32E57616 /* NavigationTests.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		1104BA91218AC1D885F006D8 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,9 +216,18 @@
 				E092D5835D6E93C9AFED296A /* App.entitlements */,
 				C1DF13D8BBDD7CC8606BE76E /* App.swift */,
 				0F83C7F05B55D6D03D0C5894 /* Assets.xcassets */,
-				A6BF4205AB493583390ECD70 /* MainView.swift */,
+				BB65381274346B68B80C53F3 /* MainView.swift */,
 			);
+			name = App;
 			path = App;
+			sourceTree = "<group>";
+		};
+		3255E121F3D52E689DCDAD34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				19031C73146A7C512AF7616B /* ModelTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3547F214ABEF45F377EF410E /* Services */ = {
@@ -202,6 +247,20 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		3DC2624C160E4509388641D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEAA14A20D5C229311A79A8F /* Pods-Scan OCR KTP.debug.xcconfig */,
+				FBCF822881F54DD8E679427E /* Pods-Scan OCR KTP.release.xcconfig */,
+				61BB98D600D4E73D71527C3A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */,
+				7CB052D0A6EEE97F4F2A92D1 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */,
+				963476B1E41D998D3FD7F84D /* Pods-Scan OCR KTPTests.debug.xcconfig */,
+				0BA843B5CCFA4940D3E28736 /* Pods-Scan OCR KTPTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3E69797CD53253C4C25DD850 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +268,16 @@
 				4332A305EAAABB7EEDD7E638 /* OCRRepositoryProtocol.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		415787F25D50C145182D1677 /* PageObjects */ = {
+			isa = PBXGroup;
+			children = (
+				6ADB528AE4DF2B6385824E40 /* CameraScreen.swift */,
+				0C2F7AB800CE4487539FE9B5 /* GalleryScreen.swift */,
+				1FA389F236D544D9BF2EA15E /* HomeScreen.swift */,
+			);
+			path = PageObjects;
 			sourceTree = "<group>";
 		};
 		48BAA9F019BA4DD5D7CB5150 /* Entities */ = {
@@ -219,17 +288,26 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		4B8E740913016561BB242DBD /* Pods */ = {
+		4EFEB377927A5F847BD7EE69 /* OCR */ = {
 			isa = PBXGroup;
 			children = (
-				C85FFA4628A175C44308F6C5 /* Pods-Scan OCR KTP.debug.xcconfig */,
-				8EA85EB71AE59E15D1A17644 /* Pods-Scan OCR KTP.release.xcconfig */,
-				5E53FE4AC49437BA9B5A1EC9 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */,
-				EDA7DEAA8A15448FF71FCDCB /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */,
-				FD1FC7EAF04C0EF092871B75 /* Pods-Scan OCR KTPTests.debug.xcconfig */,
-				DF26803B67F60F0F7F2573FA /* Pods-Scan OCR KTPTests.release.xcconfig */,
+				823E05B60E8725016F372E89 /* DualEngineTests.swift */,
+				0A70D0FCBF95CD947F40214F /* MLKitOCRTests.swift */,
+				59009646392D7E0051A86CF8 /* VisionOCRTests.swift */,
 			);
-			path = Pods;
+			path = OCR;
+			sourceTree = "<group>";
+		};
+		57EDEFE9FCF875B29E829A4A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				53D373AE6A884BB54686E1DC /* CameraFlowTests.swift */,
+				A58EB6C35142ADD7CC0DAB8E /* GalleryFlowTests.swift */,
+				C2EEB7FE6537C66D6BA96A3B /* HomeScreenTests.swift */,
+				8E72787D77B56AA3167D4ACF /* LaunchTests.swift */,
+				B217A2BDCFCDFB08235D96B2 /* NavigationTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		61E67D7FB25E6430685900BD /* Domain */ = {
@@ -250,7 +328,7 @@
 				81D78E29FD07E71F2CC457F6 /* UITests */,
 				6D43D7E38AFCA458F5AC5901 /* Frameworks */,
 				1F80B9B0086CDCA0100034C9 /* Products */,
-				4B8E740913016561BB242DBD /* Pods */,
+				3DC2624C160E4509388641D8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,7 +353,12 @@
 		7BD8EEADB89091BAE6643A46 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B1FDF7BB461822FCEC9E58B7 /* Tests.swift */,
+				8611B2A793C20E3F19AD0071 /* Helpers */,
+				3255E121F3D52E689DCDAD34 /* Models */,
+				0B4B5F7B90FB0EC238BBE8E6 /* Navigation */,
+				4EFEB377927A5F847BD7EE69 /* OCR */,
+				B23F967213F3FE708037B302 /* Parser */,
+				F57E13D5F17A3EFD5560F576 /* README.md */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -293,10 +376,10 @@
 		81D78E29FD07E71F2CC457F6 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				BF443EAB769B44CEE2228991 /* CameraFlowUITests.swift */,
-				3144C0D0CC274C5E94BD432E /* GalleryFlowUITests.swift */,
-				613897788B54B79A85D9C9F4 /* UITests.swift */,
-				4007E1CB8F85C9B328CA5D68 /* UITestsLaunchTests.swift */,
+				92C9B403C88F63736307A186 /* Helpers */,
+				415787F25D50C145182D1677 /* PageObjects */,
+				57EDEFE9FCF875B29E829A4A /* Tests */,
+				76D149C0104CC86B69DF4410 /* README.md */,
 			);
 			path = UITests;
 			sourceTree = "<group>";
@@ -310,6 +393,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		8611B2A793C20E3F19AD0071 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EAF13B6C9803F5D538F3A0F8 /* TestTags.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		92C9B403C88F63736307A186 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C3780DA59485D882874D862F /* UITestBase.swift */,
+				2AA08D2E430590993816718F /* XCTestCase+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		9C68E689823F41F8E3D2AF59 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,15 +420,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		B23F967213F3FE708037B302 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				522C68238063F9F45FBBECF3 /* KTPParserTests.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
 		B3AAAD258AFD9E6A0A4E7A4E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				DB51C40ACFA445AB6188C86E /* ViewModels */,
-				9D111C9DBF7239EA7738DF10 /* HomeView.swift */,
-				ECB5B8E7969459CA8D121C3C /* CameraView.swift */,
-				D8D36B8A40C558CA5DBBD9C5 /* ImagePreviewView.swift */,
-				A8A886C16C9F5EF186E4B631 /* OCRResultView.swift */,
-				8B6A150C3AEE66E5EFAFF293 /* PhotoPickerView.swift */,
+				6632B3DFCC584A6D140B5D46 /* CameraView.swift */,
+				E23EA300EEA79F1958ED23BF /* HomeView.swift */,
+				1CAFFB32765A0F31CBB7B56A /* ImagePreviewView.swift */,
+				ED3E53E4DA88E1CE959804D3 /* OCRResultView.swift */,
+				1AC4E995F572F466C0E445E8 /* PhotoPickerView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -354,7 +462,7 @@
 		E7D760FA24655B65D00DF21F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				8942E5D1A5AB8BDD5E261311 /* OCRLogger.swift */,
+				7CDA187633E9E93B6631ABEB /* OCRLogger.swift */,
 				520DEC94AF922A4C0BE5CDCF /* OCRLoggerAdapter.swift */,
 			);
 			path = Utils;
@@ -379,9 +487,10 @@
 			buildPhases = (
 				DDBE3B78A3B55A19A59F9E39 /* [CP] Check Pods Manifest.lock */,
 				DEBAF3C98FAFF35CD3C6F6FE /* Sources */,
+				240A9E999D61C435F02A4400 /* Resources */,
 				0E42511AD8A39B371D5F39A5 /* Frameworks */,
-				EC91EAB46AE377FE9D112F8F /* [CP] Embed Pods Frameworks */,
-				9E597A565AD1C79BD2AEB5AC /* [CP] Copy Pods Resources */,
+				C875A5076970B5A9541F6F7C /* [CP] Embed Pods Frameworks */,
+				8FF1F59EB5B5FC7CF035291D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -419,6 +528,7 @@
 			buildPhases = (
 				39AB81B7D2733F847FD0C127 /* [CP] Check Pods Manifest.lock */,
 				87E6BB09E342432A0A0A4634 /* Sources */,
+				17347096EE04C6318E07C1A7 /* Resources */,
 				5675F281EBB57AC59893215B /* Frameworks */,
 			);
 			buildRules = (
@@ -465,6 +575,7 @@
 			);
 			mainGroup = 63BFAABBDE45BC6321276B15;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 1F80B9B0086CDCA0100034C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -477,6 +588,22 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		17347096EE04C6318E07C1A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1160E667A8DA8A5FA6DF06ED /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240A9E999D61C435F02A4400 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563FF69CB55865E7B542735E /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69844104E44CCFDF5671C2FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -497,13 +624,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -531,7 +654,7 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 		};
-		9E597A565AD1C79BD2AEB5AC /* [CP] Copy Pods Resources */ = {
+		8FF1F59EB5B5FC7CF035291D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -539,17 +662,30 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C875A5076970B5A9541F6F7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DDBE3B78A3B55A19A59F9E39 /* [CP] Check Pods Manifest.lock */ = {
@@ -574,27 +710,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 		};
-		EC91EAB46AE377FE9D112F8F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP-Scan OCR KTPUITests/Pods-Scan OCR KTP-Scan OCR KTPUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EFA06C73A2243776F3A276FB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -604,13 +719,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Scan OCR KTP/Pods-Scan OCR KTP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -645,7 +756,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BE7DD1B62B2616D8A253D5F /* Tests.swift in Sources */,
+				9D2107A4CB4D8D4EAE3B262D /* DualEngineTests.swift in Sources */,
+				BE29059E4BEA7834DFD71D1A /* KTPParserTests.swift in Sources */,
+				F3B8E0C155F049944C8C4BC0 /* MLKitOCRTests.swift in Sources */,
+				A17D223B9062EA9F1DE4A2D3 /* ModelTests.swift in Sources */,
+				4F7BC891ABF9F993D2EC1B53 /* NavigationTests.swift in Sources */,
+				B6AA2343B0A9B58C50A34082 /* TestTags.swift in Sources */,
+				E716D3156D2D29C2F27C7CF8 /* VisionOCRTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,29 +772,29 @@
 			files = (
 				01D8EEF4A65403F0A2CF62DA /* App.swift in Sources */,
 				6785FAAE76198E14EBA108CA /* AppRoute.swift in Sources */,
-				1FDD436D54C75BEB639DF44D /* CameraView.swift in Sources */,
-				A320362AEF501B4DD48C78F2 /* MainView.swift in Sources */,
+				4CF6D883E796E667739547C7 /* CameraView.swift in Sources */,
 				6282209A204735433E40A5FF /* DIContainer.swift in Sources */,
-				0E7552F9E4C74805429D7951 /* HomeView.swift in Sources */,
+				969079BEFDEBDC74522E7CCA /* HomeView.swift in Sources */,
 				DEBC7B3E839F73EB2674FD5E /* ImageData.swift in Sources */,
-				AE3D39EDE13B05C85963601E /* ImagePreviewView.swift in Sources */,
+				51618C3604B56B312C087530 /* ImagePreviewView.swift in Sources */,
 				D944E18E436157402DF70A62 /* KTPData.swift in Sources */,
 				483712BB480AEE0D06F9B9A8 /* KTPFieldExtractors.swift in Sources */,
 				26A2780C9E67363E27CA22FD /* KTPParser.swift in Sources */,
 				F6EAEF6D25764F81B8246764 /* KTPParserAdapter.swift in Sources */,
 				534F80AAD30773B3C3F08696 /* KTPParserProtocol.swift in Sources */,
 				8F49C270750994AA8371F662 /* MLKitOCRService.swift in Sources */,
+				D789E61BCDFCF7B7D14BD76B /* MainView.swift in Sources */,
 				B60AEEC9E4CBF88F6E3D33F0 /* NavigationCoordinator.swift in Sources */,
 				FF52C8D6C718F88304CD2CE6 /* NavigationFactory.swift in Sources */,
-				AA6D0F9811D619C64AD619F2 /* OCRLogger.swift in Sources */,
+				4969F86C9B2B145930565CF1 /* OCRLogger.swift in Sources */,
 				714A003ACFFE29A6677AA125 /* OCRLoggerAdapter.swift in Sources */,
 				C17B9BFA9DFDA6A05EBCA483 /* OCRManager.swift in Sources */,
 				E63EC12041EC66375E7016CD /* OCRProcessingViewModel.swift in Sources */,
 				BD94F7D137DB68165BE558F3 /* OCRRepository.swift in Sources */,
 				13D5B3A2F32EABBDF0898F3F /* OCRRepositoryProtocol.swift in Sources */,
 				94168F6623513DF3AC5E2310 /* OCRResult.swift in Sources */,
-				9D6109690C40FFC4DD6EFB18 /* OCRResultView.swift in Sources */,
-				01C25E81C26891DB20B372DA /* PhotoPickerView.swift in Sources */,
+				C08FF13A91E0F1EB2D07FA6D /* OCRResultView.swift in Sources */,
+				1037B1DAA63B73C0AB6457DF /* PhotoPickerView.swift in Sources */,
 				6785125138F81238EB182AAD /* ProcessKTPImageUseCase.swift in Sources */,
 				9F22AA37FF979EDEECA8872B /* VisionOCRService.swift in Sources */,
 				8787F2840E13CB4808401580 /* VisionOCRServiceAdapter.swift in Sources */,
@@ -688,10 +805,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				351BE98F84E7E337874AEF9B /* CameraFlowUITests.swift in Sources */,
-				1F9AAD0D123FE590C484E1B3 /* GalleryFlowUITests.swift in Sources */,
-				0DE5E61C203F6A8019403732 /* UITests.swift in Sources */,
-				D3D1D5C54756684022624599 /* UITestsLaunchTests.swift in Sources */,
+				C73F5C96DC7298EAEF23D3EA /* CameraFlowTests.swift in Sources */,
+				8B047322A1560D10E9DC651E /* CameraScreen.swift in Sources */,
+				2072DE27F8B99E8049FB57C6 /* GalleryFlowTests.swift in Sources */,
+				99F2B4015C874A4FEF82D097 /* GalleryScreen.swift in Sources */,
+				5D17CFE3C7E84675902F2C5A /* HomeScreen.swift in Sources */,
+				6EADCE13F08396AC6BEC543F /* HomeScreenTests.swift in Sources */,
+				7CF320F52AC7EDAE0ECB0965 /* LaunchTests.swift in Sources */,
+				6F87F4C61E6D783CA37DAFD2 /* NavigationTests.swift in Sources */,
+				75C89BB4B597F530090D609F /* UITestBase.swift in Sources */,
+				DEB4F0CF320DF0ECC5845433 /* XCTestCase+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,7 +836,7 @@
 /* Begin XCBuildConfiguration section */
 		0790FD7A7BAF1053F7BB454D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD1FC7EAF04C0EF092871B75 /* Pods-Scan OCR KTPTests.debug.xcconfig */;
+			baseConfigurationReference = 963476B1E41D998D3FD7F84D /* Pods-Scan OCR KTPTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -806,7 +929,7 @@
 		};
 		48A84F605A771A239D997397 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDA7DEAA8A15448FF71FCDCB /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */;
+			baseConfigurationReference = 7CB052D0A6EEE97F4F2A92D1 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -828,7 +951,7 @@
 		};
 		4E2B61116111E18645AA6A9F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF26803B67F60F0F7F2573FA /* Pods-Scan OCR KTPTests.release.xcconfig */;
+			baseConfigurationReference = 0BA843B5CCFA4940D3E28736 /* Pods-Scan OCR KTPTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -850,7 +973,7 @@
 		};
 		4F7D14FDEB25687E2C312B47 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EA85EB71AE59E15D1A17644 /* Pods-Scan OCR KTP.release.xcconfig */;
+			baseConfigurationReference = FBCF822881F54DD8E679427E /* Pods-Scan OCR KTP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -954,7 +1077,7 @@
 		};
 		97BD27BCF74A10F7F46B20E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E53FE4AC49437BA9B5A1EC9 /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */;
+			baseConfigurationReference = 61BB98D600D4E73D71527C3A /* Pods-Scan OCR KTP-Scan OCR KTPUITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -976,7 +1099,7 @@
 		};
 		9B97388DE08EC4B2D83AE773 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C85FFA4628A175C44308F6C5 /* Pods-Scan OCR KTP.debug.xcconfig */;
+			baseConfigurationReference = BEAA14A20D5C229311A79A8F /* Pods-Scan OCR KTP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
